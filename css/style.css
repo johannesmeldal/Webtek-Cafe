@@ -1,5 +1,6 @@
 body {
     background-color: rgb(216, 190, 156);
+    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
 }
 
 #menuimg {
@@ -17,6 +18,8 @@ select {
 .menuelement {
     display: inline-block;
 }
+
+
 .menudescription {
     margin-top: -20px;
 }
