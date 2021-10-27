@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Switch language to norwegian? -->
+
 <head>
     <meta charset="UTF-8">
     <title>Webtek Kafe</title>
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%; /* Unnecessary? */
+            height: 520px; /* Adjust to window size? */
+        }
+
+        /* Apply this styling to slides-class instead of img */
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Make slideshow images fill width of browser window */
+        body {
+            margin: 0;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <!-- Wrapper for slideshow -->
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="img/slideshow_1.jpg" alt="Cafe table">
+        </div>
+
+
+        <div class="slides">
+            <img src="img/slideshow_2.jpg" alt="Programming in cafe">
+        </div>
+
+
+        <div class="slides">
+            <img src="img/slideshow_3.jpg" alt="Computer on cafe table">
+        </div>
+    </div>
+
+
+    <script>
+
+        function slideshow() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(slideshow, 4000); // Change image every 4 seconds
+        }
+
+        var slideIndex = 0;
+        slideshow();
+
+
+        // TODO - Connect function to dots
+        function switchSlide(n) {
+            slideIndex = n;
+            slideshow();
+        }
+
+    </script>
+
 </body>
+
 </html>
