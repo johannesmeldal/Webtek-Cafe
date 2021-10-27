@@ -5,3 +5,23 @@ body {
 #menuimg {
     margin-left: 45%;
 }
+
+#menu {
+    margin-left: 20%;
+}
+
+select {
+    margin-right: 0%;
+}
+
+.menuelement {
+    display: inline-block;
+}
+.menudescription {
+    margin-top: -20px;
+}
+#navmenu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
