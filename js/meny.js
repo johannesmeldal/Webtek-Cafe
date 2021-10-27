@@ -16,10 +16,8 @@ drikker.forEach(drikke => {
     var paragraph = document.createElement("p");
     paragraph.innerText = drikke.name+" - "+drikke.price;
     var quant = document.createElement("p");
-    quant.style = "float:right;"
     quant.innerText = drikke.quantity;
     var less = document.createElement("button")
-    less.style = "float:right;"
     less.innerText = "-"
     less.onclick = () => {
         if (drikke.quantity > 0) {
@@ -28,7 +26,6 @@ drikker.forEach(drikke => {
         }
     }
     var more = document.createElement("button")
-    more.style ="float:right;"
     more.onclick = () => {
         if (drikke.quantity < 6) {
             drikke.quantity += 1;
@@ -254,10 +251,10 @@ function bestill() {
     })
     console.log(kvittering);
     document.getElementById("menu").innerHTML = "Takk for din bestilling!";
-    document.getElementById("menu").innerHTML += "Her er en liten oversikt";
+    document.getElementById("menu").innerHTML += "</br>Her er en liten oversikt:";
     document.getElementById("menu").innerHTML += "</br>--------------------------------------------------";
     document.getElementById("menu").appendChild(kvittering);
-    document.getElementById("menu").innerHTML += "</br>--------------------------------------------------";
+    document.getElementById("menu").innerHTML += "--------------------------------------------------";
     document.getElementById("menu").innerHTML += "</br>Total sum: " + sum + ",-</br></br>";
 
     var returnbutton = document.createElement("button");

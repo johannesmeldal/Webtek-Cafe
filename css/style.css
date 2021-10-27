@@ -14,15 +14,17 @@ body {
 select {
     margin-right: 0%;
 }
-
+.menu {
+    border-bottom: dashed;
+}
 .menuelement {
     display: inline-block;
 }
 
-
 .menudescription {
     margin-top: -20px;
 }
+
 #navmenu {
     position: fixed;
     top: 10px;
@@ -32,12 +34,12 @@ select {
     color: rgb(60, 77, 31);
 }
 
-a{
+a {
     color: rgb(60, 77, 31);
     text-decoration: none;
 }
 
-#punkt{
+.punkt{
     width: 30px;
     height: 20px;
     float: left;
