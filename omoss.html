@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="UTF-8" content="width=device-width">
+    <title>Webtek Kafe - Om oss</title>
     <link href="css/style.css" rel="stylesheet">
     <style>
-        #textbox {
-            margin: auto;
+        .container {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            margin:auto
 
+        }
+        .cofee {
+            height: 30%;
+        }
+        h1 {
+            position: absolute;   
+            top: 0%;
+            left: -30%;        
+            background-color: transparent;
+            color: seagreen;
+            height: auto;
+            width:auto;
+            text-align: left;
+            font-size: 70px;
+
+        }
+        .textbox {
+            position: absolute;
+            left: -30%;
+            top: 10%;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding-left: 20px;
+            height: 50%;
+            width: 50%; 
+            text-align: left;  
+            font-size: 20px;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <div id=textbox>
-        <h1 id="omoss">OM OSS</h1>
-
-        <p>Vi ønsker alle hjertelig velkommen til Webtek Kafe i Haakon VIIs gate 17, i Trondheim.
-            Menyen vår inkluderer nybrygget kaffe, lunch-retter laget på ferske råvarer og desserter av et bredt utvalg sorter.
-            Vår visjon er å være en trygg møteplass med imøtekommende og engasjerte ansatte.
-            Vi legger til rette for at IT-interesserte, både studenter og eldre, skal ha en arena med et kreativt og skapende miljø.
-            Ved flere anledninger arrangerer vi både kurs og andre aktiviteter som er både interessante og artige å delta på. 
-            Alle er velkommen!
-        </p>
-    </div>
-    <div>
-        <img src="omoss.jpg" alt="Inside the cofee">
+    <div class="container">
+        <img class="cofee" src="img/omoss.jpg" alt="Inside the cofee" >
+        <div class="header">
+            <h1 id="omoss">OM OSS</h1>
+        </div>
+        <div class="textbox">
+            <p>Vi ønsker alle hjertelig velkommen til Webtek Kafe i Haakon VIIs gate 17, i Trondheim.
+                Menyen vår inkluderer nybrygget kaffe, lunch-retter laget på ferske råvarer og desserter av et bredt utvalg sorter.
+                Vår visjon er å være en trygg møteplass med imøtekommende og engasjerte ansatte.
+                Vi legger til rette for at IT-interesserte, både studenter og eldre, skal ha en arena med et kreativt og skapende miljø.
+                Ved flere anledninger arrangerer vi både kurs og andre aktiviteter som er både interessante og artige å delta på. 
+                Alle er velkommen!
+            </p>
+        </div>
     </div>
 </body>
 </html>

@@ -6,10 +6,33 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <img id="menuimg" src="img/menu.png" alt="enjoy the menu">
+    <img id="menuimg" src="img/menu.png" alt="enjoy the menu">
+    <div id="menu">
+        <section class="menu" id="drikker">
+            <h2>Drikker</h2>
+        </section>
+        <section class="menu" id="salater">
+            <h2>Salater</h2>
+        </section>
+        <section class="menu" id="snacks">
+            <h2>Snacks</h2>
+        </section>
+        <section class="menu" id="kaker">
+            <h2>Kaker</h2>
+        </section>
+        <button id="bestill" onclick="bestill()">Bestill</button>
+    </div>
+    <div id="navmenu">
+        <img class="punkt" src="img/punkt.png" alt="bønner">
+        <a href="#drikker" >DRIKKER</a><br>
+        <img class="punkt" src="img/punkt.png" alt="bønner">
+        <a href="#salater" >SALATER</a><br>
+        <img class="punkt" src="img/punkt.png" alt="bønner">
+        <a href="#snacks">SNACKS</a><br>
+        <img class="punkt" src="img/punkt.png" alt="bønner">
+        <a href="#kaker">KAKER</a>
     </div>
     
-    
+    <script src="js/meny.js"></script>
 </body>
 </html>

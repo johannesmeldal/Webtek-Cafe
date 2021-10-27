@@ -7,17 +7,55 @@
 </head>
 <style>
     body{
+        font-size: 20px;
         text-align: center;
+        padding-left: 400px;
+        padding-right: 400px;
     }
+    img{
+        width: 250px;
+        height: 200px;
+        vertical-align: middle;
+        position: relative;
+        
+    }
+    #tekst1{
+        text-align: left;
+    }
+
+    #tekst2{
+        text-align: right;
+        
+    }
+
+
+    #bilde1{
+        float:left;
+        padding-right: 20px;
+
+    }
+    #bilde2{
+        float: right;
+        padding-left: 20px;
+
+    }
+   
 </style>
 <body>
-<h1>Gjeldende tilbud</h1>
-<div id="tilbud_en"> Kaffe og kake for 45 
-   <br><I>Tilbudet gjelder ut desember</I>
+<h1>Gjeldende tilbud</h1><br>
+<div id="tilbud_en">
+    <img src="img/Tilbud1.png" alt="kaffe og kake" id="bilde1" onclick="click_one()">
+    <br><br>
+    <p id ="tekst1"> Kaffe og kake for 45 
+   <br><I>Tilbudet gjelder ut desember</I> </p>
 </div>
-<br><br><br>
-<div id="tilbud_to"> Kjøp en kaffe mocca
-   <br> - og få med en kaffe gratis
+<br><br><br><br><br>
+<div id="tilbud_to"> 
+    <img src="img/Tilbud2.png" alt="kaffe mocca" id="bilde2" onclick="click_two()">
+    <br><br>
+
+    <p id= "tekst2">Kjøp en kaffe mocca
+   <br> - og få med en kaffe gratis </p>
 </div>
 </body>
 </html>
