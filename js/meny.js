@@ -16,8 +16,10 @@ drikker.forEach(drikke => {
     var paragraph = document.createElement("p");
     paragraph.innerText = drikke.name+" - "+drikke.price;
     var quant = document.createElement("p");
+    quant.style = "float:right;"
     quant.innerText = drikke.quantity;
     var less = document.createElement("button")
+    less.style = "float:right;"
     less.innerText = "-"
     less.onclick = () => {
         if (drikke.quantity > 0) {
@@ -26,6 +28,7 @@ drikker.forEach(drikke => {
         }
     }
     var more = document.createElement("button")
+    more.style ="float:right;"
     more.onclick = () => {
         if (drikke.quantity < 6) {
             drikke.quantity += 1;
