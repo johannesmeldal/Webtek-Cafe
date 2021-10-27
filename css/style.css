@@ -17,6 +17,9 @@ select {
 .menuelement {
     display: inline-block;
 }
+.menudescription {
+    margin-top: -20px;
+}
 #navmenu {
     position: fixed;
     top: 10px;

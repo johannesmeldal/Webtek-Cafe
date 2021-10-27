@@ -48,12 +48,15 @@ drikker.forEach(drikke => {
 
 salater = [
     {name: "Cæsarsalat",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Salat 2",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Salat 3",
+    description: "Desription",
     price: 100,
     quantity: 0}
 ]
@@ -81,6 +84,10 @@ salater.forEach(salat => {
     }
     more.innerText = "+"
 
+    var description = document.createElement("p");
+    description.innerText = salat.description;
+    description.className = "menudescription";
+
     paragraph.className = "menuelement";
     less.className = "menuelement";
     quant.className = "menuelement";
@@ -90,18 +97,22 @@ salater.forEach(salat => {
     div.appendChild(less);
     div.append(quant);
     div.appendChild(more);
+    div.appendChild(description);
     
     document.getElementById("salater").appendChild(div);
 });
 
 snacks = [
     {name: "Snack 1",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Snack 2",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Snack 3",
+    description: "Desription",
     price: 100,
     quantity: 0}
 ]
@@ -129,6 +140,10 @@ snacks.forEach(snack => {
     }
     more.innerText = "+"
 
+    var description = document.createElement("p");
+    description.innerText = snack.description;
+    description.className = "menudescription";
+
     paragraph.className = "menuelement";
     less.className = "menuelement";
     quant.className = "menuelement";
@@ -138,18 +153,22 @@ snacks.forEach(snack => {
     div.appendChild(less);
     div.append(quant);
     div.appendChild(more);
+    div.appendChild(description);
     
     document.getElementById("snacks").appendChild(div);
 });
 
 kaker = [
     {name: "Kake 1",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Kake 2",
+    description: "Desription",
     price: 100,
     quantity: 0},
     {name: "Kake 3",
+    description: "Desription",
     price: 100,
     quantity: 0}
 ]
@@ -179,6 +198,10 @@ kaker.forEach(kake => {
     }
     more.innerText = "+"
 
+    var description = document.createElement("p");
+    description.innerText = kake.description;
+    description.className = "menudescription";
+
     paragraph.className = "menuelement";
     less.className = "menuelement";
     quant.className = "menuelement";
@@ -188,6 +211,7 @@ kaker.forEach(kake => {
     div.append(less);
     div.append(quant);
     div.append(more);
+    div.appendChild(description);
     
     document.getElementById("kaker").appendChild(div);
 });
