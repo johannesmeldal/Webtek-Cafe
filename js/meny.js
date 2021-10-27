@@ -12,6 +12,7 @@ drikker = [
 
 drikker.forEach(drikke => {
     var div = document.createElement("div");
+    div.id = (drikke.name).toLowerCase();
     var paragraph = document.createElement("p");
     paragraph.innerText = drikke.name+" - "+drikke.price;
     var quant = document.createElement("p");
@@ -63,6 +64,7 @@ salater = [
 
 salater.forEach(salat => {
     var div = document.createElement("div");
+    div.id = (salat.name).toLowerCase();
     var paragraph = document.createElement("p");
     paragraph.innerText = salat.name+" - "+salat.price;
     var quant = document.createElement("p");
@@ -119,6 +121,7 @@ snacks = [
 
 snacks.forEach(snack => {
     var div = document.createElement("div");
+    div.id = (snack.name).toLowerCase();
     var paragraph = document.createElement("p");
     paragraph.innerText = snack.name+" - "+snack.price;
     var quant = document.createElement("p");
@@ -175,6 +178,7 @@ kaker = [
 
 kaker.forEach(kake => {
     var div = document.createElement("div");
+    div.id = (kake.name).toLowerCase();
     var paragraph = document.createElement("p");
     paragraph.innerText = kake.name+" - "+kake.price;
     var quant = document.createElement("p");
