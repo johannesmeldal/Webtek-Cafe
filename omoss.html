@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container {
+            position: relative;
+            max-width: 50%;
+            margin:auto
+
+        }
+        .header {
+            background-color: transparent;
+            color: seagreen;
+        }
+        .textbox {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(216, 190, 156);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1 id="omoss">OM OSS</h1>
-        <p>Vi ønsker alle hjertelig velkommen til Webtek Kafe i Haakon VIIs gate 17, i Trondheim.
-            Menyen vår inkluderer nybrygget kaffe, lunch-retter laget på ferske råvarer og desserter av et bredt utvalg sorter.
-            Vår visjon er å være en trygg møteplass med imøtekommende og engasjerte ansatte.
-            Vi legger til rette for at IT-interesserte, både studenter og eldre, skal ha en arena med et kreativt og skapende miljø.
-            Ved flere anledninger arrangerer vi både kurs og andre aktiviteter som er både interessante og artige å delta på. 
-            Alle er velkommen!
-        </p>
+    <div class="container">
+        <img class="cofee" src="img/omoss.jpg" alt="Inside the cofee" >
+        <div class="header">
+            <h1 id="omoss">OM OSS</h1>
+        </div> 
+        <div class="textbox">
+            
+            <p>Vi ønsker alle hjertelig velkommen til Webtek Kafe i Haakon VIIs gate 17, i Trondheim.
+                Menyen vår inkluderer nybrygget kaffe, lunch-retter laget på ferske råvarer og desserter av et bredt utvalg sorter.
+                Vår visjon er å være en trygg møteplass med imøtekommende og engasjerte ansatte.
+                Vi legger til rette for at IT-interesserte, både studenter og eldre, skal ha en arena med et kreativt og skapende miljø.
+                Ved flere anledninger arrangerer vi både kurs og andre aktiviteter som er både interessante og artige å delta på. 
+                Alle er velkommen!
+            </p>
+            
+        </div>
     </div>
 </body>
 </html>
