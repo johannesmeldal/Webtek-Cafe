@@ -5,22 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Arrangementer </title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
+<style> 
+    h1 { 
+        text-align: center;
+        color: rgb(60, 77, 31);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        padding-left: 50px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 2.0;
+      }
+    img {
+        width: 500px;
+        height: 350px;
+      }
+
+    .text {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #prog { 
+        float: right;
+    }
+
+    .toptext { 
+        font-size: 30px;
+        color: rgb(60, 77, 31);
+    }
+</style>
 <body>
     <h1> Kommende arrangementer </h1>
-    <div class="a"> 
-        <img src= https://www.freepnglogos.com/uploads/javascript-png/js-outline-javascript-logo-download-clip-art-with-transparent-25.png alt="Javascript logo"/>
-        <p> PROGRAMMERINGSKVELD FOR 15-25 </p>
-        <p> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! 
+    <div class="container"> 
+        <div class="img">
+        <img src= https://www.freepnglogos.com/uploads/javascript-png/js-outline-javascript-logo-download-clip-art-with-transparent-25.png alt="Javascript logo" id="js"/>
+        </div>
+        <div class="text">
+        <p class="toptext" > PROGRAMMERINGSKVELD FOR 15-25 </p>
+        <p> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! <br>
             Velkommen til en koselig kveld for alle nivåer! Her går vi gjennom blant annet grunnleggende programmering og ulike programmeringsspråk. 
-            Vi har flinke fagfolk som er der for å hjelpe deg til å bli flinkere. MER INFO</p>
+            Vi har flinke fagfolk som er der for å hjelpe deg til å bli flinkere. <br> 
+            MER INFO</p>
+        </div>
     </div>
-    <div class = "b">
-        <img src= https://img.lovepik.com/original_origin_pic/18/12/02/7c1db27ce8ca32b12143c97bf86f3fbb.png_wh300.png alt="Christmas" />
-        <p> JULEVERKSTED </p>
+    <br>
+    <div class="container"> 
+        <div class="img">
+        <img src=https://i.pinimg.com/736x/e9/88/b6/e988b66e788ce0f049190c4ec8587f17.jpg alt="programming" id="prog"/>
+        </div>
+        <div class="text">
+        <p class="toptext"> PROGRAMMERINGSKVELD FOR 40 OG OVER </p>
+        <p> MER INFO</p>
+        </div>
+    </div>
+<br>
+    <div class="container"> 
+        <div class="img">
+        <img src= https://arendalstidende.no/wp-content/uploads/2016/12/hvit-jul-foto-colourbox-980x568@2x.jpg alt="Christmas" id="christmas" />
+        </div>
+        <div class="text">
+        <p class="toptext"> JULEVERKSTED </p>
         <p> Kom hit for et lite avbrekk fra skole, studie og julestresset! Ta med deg familie, venner eller andre for et koselig juleverksted. 
             Her kan du lage kort, julepynt, julegaver og smykker, samt pynte pepperkaker. 
-            Vi serverer mandel i grøten til de oppmøtte, og det venter en premie til vinneren! MER INFO </p>
+            Vi serverer mandel i grøten til de oppmøtte, og det venter en premie til vinneren! <br> MER INFO </p>
+        </div>
     </div>
+
 </body>
 </html>
