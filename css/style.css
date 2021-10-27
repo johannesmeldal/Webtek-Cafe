@@ -24,4 +24,18 @@ select {
     position: fixed;
     top: 10px;
     left: 10px;
+    font-size: 20px;
+    padding-top: 190px;
+    color: rgb(60, 77, 31);
+}
+
+a{
+    color: rgb(60, 77, 31);
+    text-decoration: none;
+}
+
+#punkt{
+    width: 30px;
+    height: 20px;
+    float: left;
 }
