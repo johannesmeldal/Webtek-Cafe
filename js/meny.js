@@ -1,20 +1,27 @@
 drikker = [
-    {name: "Te",
-    price: 50,
+    {name: "WEBTEK KAFFE",
+    price: 39,
     quantity: 0},
-    {name: "Juice",
+    {name: "CAPPUCCINO",
         price: 45,
         quantity: 0},
-    {name: "Kaffe",
-        price: 30,
+    {name: "CAFFE MOCCA",
+        price: 52,
         quantity: 0}
 ]
 
 drikker.forEach(drikke => {
     var div = document.createElement("div");
     div.id = (drikke.name).toLowerCase();
-    var paragraph = document.createElement("p");
-    paragraph.innerText = drikke.name+" - "+drikke.price;
+    div.className = "menuitem";
+    var firstdiv = document.createElement("div");
+    firstdiv.className = "menufirstdiv";
+    var innerdiv = document.createElement("div");
+    innerdiv.className = "menuinnerdiv";
+    var name = document.createElement("p");
+    name.innerText = drikke.name+" - ";
+    var price = document.createElement("p");
+    price.innerText = drikke.price;
     var quant = document.createElement("p");
     quant.innerText = drikke.quantity;
     var less = document.createElement("button")
@@ -30,34 +37,40 @@ drikker.forEach(drikke => {
         if (drikke.quantity < 6) {
             drikke.quantity += 1;
             quant.innerText = drikke.quantity;
+        } else {
+            alert("Du kan maksimalt bestille 6 på en gang!");
         }
     }
     more.innerText = "+"
-
-    paragraph.className = "menuelement";
-    less.className = "menuelement";
-    quant.className = "menuelement";
-    more.className = "menuelement";
     
-    div.appendChild(paragraph)
-    div.appendChild(less);
-    div.append(quant);
-    div.appendChild(more);
+    name.className = "menuelement";
+    price.className = "menuprice";
+    less.className = "quantbutton";
+    quant.className = "quant";
+    more.className = "quantbutton";
+    
+    firstdiv.append(name);
+    firstdiv.append(price);
+    div.append(firstdiv);
+    div.append(innerdiv);
+    innerdiv.append(less);
+    innerdiv.append(quant);
+    innerdiv.append(more);
     
     document.getElementById("drikker").appendChild(div);
 });
 
 salater = [
     {name: "Cæsarsalat",
-    description: "Desription",
-    price: 100,
+    description: "kylling, krutonger, cherrytomater, feta",
+    price: 169,
     quantity: 0},
     {name: "Salat 2",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0},
     {name: "Salat 3",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0}
 ]
@@ -65,8 +78,15 @@ salater = [
 salater.forEach(salat => {
     var div = document.createElement("div");
     div.id = (salat.name).toLowerCase();
-    var paragraph = document.createElement("p");
-    paragraph.innerText = salat.name+" - "+salat.price;
+    div.className = "menuitem";
+    var firstdiv = document.createElement("div");
+    firstdiv.className = "menufirstdiv";
+    var innerdiv = document.createElement("div");
+    innerdiv.className = "menuinnerdiv";
+    var name = document.createElement("p");
+    name.innerText = salat.name+" - ";
+    var price = document.createElement("p");
+    price.innerText = salat.price;
     var quant = document.createElement("p");
     quant.innerText = salat.quantity;
     var less = document.createElement("button")
@@ -82,39 +102,48 @@ salater.forEach(salat => {
         if (salat.quantity < 6) {
             salat.quantity += 1;
             quant.innerText = salat.quantity;
+        } else {
+            alert("Du kan maksimalt bestille 6 på en gang!");
         }
     }
     more.innerText = "+"
+    
 
     var description = document.createElement("p");
     description.innerText = salat.description;
     description.className = "menudescription";
-
-    paragraph.className = "menuelement";
-    less.className = "menuelement";
-    quant.className = "menuelement";
-    more.className = "menuelement";
     
-    div.appendChild(paragraph)
-    div.appendChild(less);
-    div.append(quant);
-    div.appendChild(more);
-    div.appendChild(description);
+
+    name.className = "menuelement";
+    price.className = "menuprice";
+    less.className = "quantbutton";
+    quant.className = "quant";
+    more.className = "quantbutton";
+    
+    firstdiv.append(name);
+    firstdiv.append(price);
+    div.append(firstdiv);
+    div.append(innerdiv);
+    innerdiv.append(less);
+    innerdiv.append(quant);
+    innerdiv.append(more);
+    
     
     document.getElementById("salater").appendChild(div);
+    document.getElementById("salater").appendChild(description);
 });
 
 snacks = [
     {name: "Snack 1",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0},
     {name: "Snack 2",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0},
     {name: "Snack 3",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0}
 ]
@@ -122,8 +151,15 @@ snacks = [
 snacks.forEach(snack => {
     var div = document.createElement("div");
     div.id = (snack.name).toLowerCase();
-    var paragraph = document.createElement("p");
-    paragraph.innerText = snack.name+" - "+snack.price;
+    div.className = "menuitem";
+    var firstdiv = document.createElement("div");
+    firstdiv.className = "menufirstdiv";
+    var innerdiv = document.createElement("div");
+    innerdiv.className = "menuinnerdiv";
+    var name = document.createElement("p");
+    name.innerText = snack.name+" - ";
+    var price = document.createElement("p");
+    price.innerText = snack.price;
     var quant = document.createElement("p");
     quant.innerText = snack.quantity;
     var less = document.createElement("button")
@@ -139,39 +175,46 @@ snacks.forEach(snack => {
         if (snack.quantity < 6) {
             snack.quantity += 1;
             quant.innerText = snack.quantity;
+        } else {
+            alert("Du kan maksimalt bestille 6 på en gang!");
         }
     }
     more.innerText = "+"
+    
 
     var description = document.createElement("p");
     description.innerText = snack.description;
     description.className = "menudescription";
 
-    paragraph.className = "menuelement";
-    less.className = "menuelement";
-    quant.className = "menuelement";
-    more.className = "menuelement";
+    name.className = "menuelement";
+    price.className = "menuprice";
+    less.className = "quantbutton";
+    quant.className = "quant";
+    more.className = "quantbutton";
 
-    div.appendChild(paragraph)
-    div.appendChild(less);
-    div.append(quant);
-    div.appendChild(more);
-    div.appendChild(description);
+    firstdiv.append(name);
+    firstdiv.append(price);
+    div.append(firstdiv);
+    div.append(innerdiv);
+    innerdiv.append(less);
+    innerdiv.append(quant);
+    innerdiv.append(more);
     
     document.getElementById("snacks").appendChild(div);
+    document.getElementById("snacks").appendChild(description);
 });
 
 kaker = [
     {name: "Kake 1",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0},
     {name: "Kake 2",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0},
     {name: "Kake 3",
-    description: "Desription",
+    description: "Innhold",
     price: 100,
     quantity: 0}
 ]
@@ -179,8 +222,15 @@ kaker = [
 kaker.forEach(kake => {
     var div = document.createElement("div");
     div.id = (kake.name).toLowerCase();
-    var paragraph = document.createElement("p");
-    paragraph.innerText = kake.name+" - "+kake.price;
+    div.className = "menuitem";
+    var firstdiv = document.createElement("div");
+    firstdiv.className = "menufirstdiv";
+    var innerdiv = document.createElement("div");
+    innerdiv.className = "menuinnerdiv";
+    var name = document.createElement("p");
+    name.innerText = kake.name+" - ";
+    var price = document.createElement("p");
+    price.innerText = kake.price;
     var quant = document.createElement("p");
     quant.innerText = kake.quantity;
 
@@ -198,26 +248,33 @@ kaker.forEach(kake => {
         if (kake.quantity < 6) {
             kake.quantity += 1;
             quant.innerText = kake.quantity;
+        } else {
+            alert("Du kan maksimalt bestille 6 på en gang!");
         }
     }
     more.innerText = "+"
+    
 
     var description = document.createElement("p");
     description.innerText = kake.description;
     description.className = "menudescription";
 
-    paragraph.className = "menuelement";
-    less.className = "menuelement";
-    quant.className = "menuelement";
-    more.className = "menuelement";
+    name.className = "menuelement";
+    price.className = "menuprice";
+    less.className = "quantbutton";
+    quant.className = "quant";
+    more.className = "quantbutton";
 
-    div.append(paragraph)
-    div.append(less);
-    div.append(quant);
-    div.append(more);
-    div.appendChild(description);
+    firstdiv.append(name);
+    firstdiv.append(price);
+    div.append(firstdiv);
+    div.append(innerdiv);
+    innerdiv.append(less);
+    innerdiv.append(quant);
+    innerdiv.append(more);
     
     document.getElementById("kaker").appendChild(div);
+    document.getElementById("kaker").appendChild(description);
 });
 
 function bestill() {
@@ -245,23 +302,34 @@ function bestill() {
     kaker.forEach(kake => {
         if (kake.quantity > 0) {
             sum += kake.price*kake.quantity
-            kvittering.innerHTML += kake.quantity + " x " + kake.name + " ( "+(kake.quantity*kake.price)+",- )</br>";
+            kvittering.innerHTML += kake.quantity + " x " + kake.name + " ("+(kake.quantity*kake.price)+",-)</br>";
         }
         
     })
     console.log(kvittering);
-    document.getElementById("menu").innerHTML = "Takk for din bestilling!";
-    document.getElementById("menu").innerHTML += "</br>Her er en liten oversikt:";
-    document.getElementById("menu").innerHTML += "</br>--------------------------------------------------";
-    document.getElementById("menu").appendChild(kvittering);
-    document.getElementById("menu").innerHTML += "--------------------------------------------------";
-    document.getElementById("menu").innerHTML += "</br>Total sum: " + sum + ",-</br></br>";
+    var section1 = document.createElement("section");
+    section1.className = "menusection";
+    section1.innerHTML = "Takk for din bestilling!</br></br>Vedlagt finner du kvitteringen:</br></br>";
+    var section2 = document.createElement("section");
+    section2.className = "menusection";
+    section2.appendChild(kvittering);
+    var section3 = document.createElement("section");
+    section3.className = "menusection";
+    section3.innerHTML = "</br>Total sum: " + sum + ",-</br></br>";
 
     var returnbutton = document.createElement("button");
     returnbutton.innerHTML = "Return to menu";
+    returnbutton.className = "menubutton"
     returnbutton.onclick = () => {
         window.location.href = 'meny.html';
     }
 
+    document.getElementById("menu").innerHTML = null;
+    
+    document.getElementById("menu").appendChild(section1);
+    document.getElementById("menu").appendChild(section2);
+    document.getElementById("menu").appendChild(section3);
+    document.getElementById("menu").innerHTML += "</br>";
     document.getElementById("menu").appendChild(returnbutton);
+    document.getElementById("navmenu").style.display = "none";
 }

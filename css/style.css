@@ -1,6 +1,6 @@
 body {
     background-color: rgb(216, 190, 156);
-    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 #menuimg {
@@ -8,58 +8,127 @@ body {
 }
 
 #menu {
-    margin-left: 20%;
+    margin-left: 250px;
+    width: 75%;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
 }
 
-select {
-    margin-right: 0%;
-}
-.menu {
+.menusection {
     border-bottom: dashed;
+    font-size: 24px;
+}
+.menuitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: pre-wrap
+}
+
+#drikker .menuitem {
+    margin-bottom: 23px;
+}
+.menufirstdiv {
+    display: inline-flex;
+    width: auto;
+}
+.menuprice {
+    color: green;
+    font-weight: bold;
+    margin: 0;
 }
 .menuelement {
-    display: inline-block;
+    margin: 0;
 }
 
+.menuinnerdiv {
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantbutton {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    color: green;
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
+.quant {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px
+}
+.quantbutton:hover {
+    color: white;
+}
 .menudescription {
-    margin-top: -20px;
+    position: relative;
+    top: -10px;
+    margin: 0px;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.menuheader {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
 }
 
 #navmenu {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-    padding-top: 190px;
-    color: rgb(60, 77, 31);
+    top: 204px;
+    left: 20px;
+    font-size: 30px;
 }
 
 a {
-    color: rgb(60, 77, 31);
+    color: gray;
     text-decoration: none;
 }
 
 .punkt{
-    width: 30px;
-    height: 20px;
+    width: auto;
+    height: 33px;
     float: left;
 }
 
-#bestill{
-    width: 100%;
+.menubutton{
+    width: 100px;
     height: 50px;
     color:rgb(60, 77, 31);
     font-size: 20px;
-    border-radius: 8px;
-    box-shadow: 0 9px rgb(60, 77, 31);
-}
-#bestill:hover {
-    background-color: lightgrey;
+    border-radius: 4px;
+    background-color: transparent;
+    float: right;
 }
 
-#bestill:active {
-  background-color: rgb(60, 77, 31);
-  box-shadow: 0 5px #666;
-  color: white;
-  transform: translateY(4px);
+.menubutton:hover {
+    background-color: antiquewhite;
+}
+
+.menubutton:active { 
+    background-color: rgb(60, 77, 31);
+    color: white;
+    transform: translateY(4px);
+}
+
+@media only screen and (max-width: 960px){
+    #navmenu {
+        display: none;
+    }
+    #menu {
+        margin-left: 20px;
+    }
 }

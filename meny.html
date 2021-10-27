@@ -8,29 +8,35 @@
 <body>
     <img id="menuimg" src="img/menu.png" alt="enjoy the menu">
     <div id="menu">
-        <section class="menu" id="drikker">
-            <h2>Drikker</h2>
+        <h2 class="menuheader" id="hovedheader">Velommen</h2>
+        <section class="menusection">
+            <p>For å bestille velger du antallet av hver rett du skal ha, og trykker
+                deretter på "bestill" knappen nederst på siden.
+            </p>
         </section>
-        <section class="menu" id="salater">
-            <h2>Salater</h2>
+        <h2 class="menuheader" id="drikkeheader">Drikker</h2>
+        <section class="menusection" id="drikker">
         </section>
-        <section class="menu" id="snacks">
-            <h2>Snacks</h2>
+        <h2 class="menuheader" id="salatheader">Salater</h2>
+        <section class="menusection" id="salater">
         </section>
-        <section class="menu" id="kaker">
-            <h2>Kaker</h2>
+        <h2 class="menuheader" id="snacksheader">Snacks</h2>
+        <section class="menusection" id="snacks">
         </section>
-        <button id="bestill" onclick="bestill()">Bestill</button>
+        <h2 class="menuheader" id="kakeheader">Kaker</h2>
+        <section class="menusection" id="kaker">
+        </section><br>
+        <button class="menubutton" onclick="bestill()">Bestill</button>
     </div>
     <div id="navmenu">
         <img class="punkt" src="img/punkt.png" alt="bønner">
-        <a href="#drikker" >DRIKKER</a><br>
+        <a href="#drikkeheader" >DRIKKER</a><br>
         <img class="punkt" src="img/punkt.png" alt="bønner">
-        <a href="#salater" >SALATER</a><br>
+        <a href="#salatheader" >SALATER</a><br>
         <img class="punkt" src="img/punkt.png" alt="bønner">
-        <a href="#snacks">SNACKS</a><br>
+        <a href="#snacksheader">SNACKS</a><br>
         <img class="punkt" src="img/punkt.png" alt="bønner">
-        <a href="#kaker">KAKER</a>
+        <a href="#kakeheader">KAKER</a>
     </div>
     
     <script src="js/meny.js"></script>
