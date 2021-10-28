@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Arrangementer </title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,10 +14,12 @@
         padding-left: 50px;
     }
     .container {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        line-height: 2.0;
+        line-height: 1;
+        margin-bottom: 20px;
       }
     img {
         width: 500px;
@@ -27,27 +27,31 @@
       }
 
     .text {
+        height: 361px;
         font-size: 20px;
         padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        max-height: 361px;
     }
-
-    #prog { 
-        float: right;
-    }
-
     .toptext { 
         font-size: 30px;
         color: rgb(60, 77, 31);
         font-weight: bold;
+        margin: 0;
     }
-
-    .button { 
-        display: contents;
-    }
-    #mer { 
+    #hiddenText1, #hiddenText2, #hiddenText3 { 
         display: none;
     }
-
+    #del1 {
+        margin: 0;
+    }
+    #lesmer1btn, #lesmer2btn, #lesmer3btn {
+        position: absolute;
+        bottom: 5px;
+        left: 520px;
+    }
 </style>
 <body>
     <h1> Kommende arrangementer </h1>
@@ -57,28 +61,32 @@
         </div>
         <div class="text">
         <p class="toptext" > Programmeringskveld for 15 - 25 år </p>
-        <p id="del1"> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! <br>
-            Velkommen til en koselig kveld for alle nivåer! Her går vi gjennom blant annet grunnleggende programmering og ulike programmeringsspråk. 
-            Vi har erfarne fagfolk som er der for å hjelpe deg til å bli flinkere, og kan hjelpe med oppgaver. <br> Her kan man også jobbe med ulike skoleoppgaver <br> <span id="dotter">...</span><span id="mer"></span> <br> 
-            knapp? <br> Dato: 2. november <br> Tidspunkt: 16:00 - 20:00 </span></p>
+            <p class="del1"> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! <br>
+                Velkommen til en koselig kveld for alle nivåer! Her går vi gjennom blant annet grunnleggende programmering og ulike programmeringsspråk. 
+                Vi har erfarne fagfolk som er der for å hjelpe deg til å bli flinkere, og kan hjelpe med oppgaver. <br> Her kan man også jobbe med ulike skoleoppgaver 
+            </p>
+            <p id="hiddenText1">
+                Dato: 2. november <br> Tidspunkt: 16:00 - 20:00
+            </p>
+            
         </div>
-        <button onclick="lesMer()" id="knapp_les"> Les mer </button>
+        <button class="menubutton" id="lesmer1btn" onclick="hvisTekst1()">Les mer</button>
     </div>
-    <br>
-
     <div class="container"> 
         <div class="img">
         <img src=img/arrangement1.jpg alt="programming" id="prog"/>
         </div>
         <div class="text">
-        <p class="toptext"> Programmeringskveld for 40 år og over </p>
-        <p> Det er aldri for sent å begynne å lære seg programmering! <br> 
-            Denne kvelden kan alle programmere - på egne premisser. Det vil bli være mange ulike aktivitetsforslag for alle nivåer. 
-            Vi har dyktige fagfolk som hjelper deg på veien. <br> 
-            Dato: 4. november <br>
-            Klokkeslett: 16:00 - 20:00 </p>
+            <p class="toptext"> Programmeringskveld for 40 år og over </p>
+            <p class="del1"> Det er aldri for sent å begynne å lære seg programmering! <br> 
+                Denne kvelden kan alle programmere - på egne premisser. Det vil bli være mange ulike aktivitetsforslag for alle nivåer. 
+                Vi har dyktige fagfolk som hjelper deg på veien. </p>
+            <p id="hiddenText2">
+                Dato: 4. november <br> Klokkeslett: 16:00 - 20:00
+            </p>
+            </div>
+            <button class="menubutton" id="lesmer2btn" onclick="hvisTekst2()">Les mer</button>
         </div>
-    </div>
     <br>
 
     <div class="container"> 
@@ -87,15 +95,17 @@
         </div>
         <div class="text">
         <p class="toptext"> Juleverksted </p>
-        <p> Kom hit for et lite avbrekk fra skole, studie og julestresset! Ta med deg familie, venner eller andre for et koselig juleverksted. 
+        <p class="del1"> Kom hit for et lite avbrekk fra skole, studie og julestresset! Ta med deg familie, venner eller andre for et koselig juleverksted. 
             Her kan du lage kort, julepynt, julegaver og smykker, samt pynte pepperkaker. 
-            Vi serverer mandel i grøten til de oppmøtte, og det venter en premie til vinneren! <br> 
+            Vi serverer mandel i grøten til de oppmøtte, og det venter en premie til vinneren!</p>
+        <p id="hiddenText3">
             Dato: 6. desember <br>
             Tidspunkt: 11:00 - 18:00 <br>
-            Velmøtt! <br>
-            knapp? </p>
+            Velmøtt!
+        </p>
         </div>
+        <button class="menubutton" id="lesmer3btn" onclick="hvisTekst3()">Les mer</button>
     </div>
-<script src="arrangementer.js"> </script>
+<script src="js/arrangementer.js"> </script>
 </body>
 </html>
