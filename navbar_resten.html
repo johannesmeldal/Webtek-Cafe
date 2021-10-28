@@ -8,44 +8,59 @@
 </head>
 <style> 
 
+    body { 
+        background-color:rgb(216, 190, 156);
+    }
+
     .nav{
         /*border:1px solid #ccc;
         border-width:1px 0; */
         margin: -15px;
+        margin-top: -55px;
         list-style:none;
         text-align:center;
-        background-color: rgb(168, 168, 14);
+        background-color: antiquewhite;
         position: fixed; 
         top: 0; 
         width: 100%;
-        
     }
+
     .nav li{
         display:inline;
     }
+
     .nav a{
         display:inline-block;
-        padding:30px;
+        padding:35px;
         font-size: 20px;
-        color: antiquewhite;
+        color: rgb(60, 77, 31);
         text-decoration: none;
     }
+
     a:hover { 
-        background-color: cadetblue;
-        color: black;
+        background-color: rgb(60, 77, 31);
+        color: antiquewhite;
     }
 
+    #navbar_logo { 
+        width: 200px;
+        height: 160px;
+        margin-top: -20px;
+        margin-bottom: -70px;
+        }
+
+        #indeximg { 
+            margin-top: 15px;
+        }
 
 </style>
 <body>
-    <div class="navbar"> 
     <ul class="nav"> 
-       <li> <a href="index.html"> HJEM </a></li>
+       <li id="indeximg"> <a href="index.html" > <img src="img/logo wc.png" id="navbar_logo" width="230px" height="145px"> </a></li>
         <li> <a href="meny.html"> MENY </a> </li>
         <li> <a href="kampanjer.html"> KAMPANJER </a> </li>
         <li> <a href="arrangementer.html"> ARRANGEMENTER </a> </li>
         <li> <a href="omoss.html"> OM OSS </a> </li>
     </ul>
-    </div>
 </body>
 </html>

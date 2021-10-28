@@ -1,24 +1,42 @@
-function lesMer() { 
-    var dotter = document.getElementById('dotter');
-    var merText = document.getElementById('mer');
-    var knapp_lesText = document.getElementById('knapp_les');
-    const del1 = document.getElementById("del1");
+var one = true;
+var two = true;
+var three = true;
 
-    if (knapp_lesText. onclick){
-        del1.innerHTML += "hei det er meg";
+function hvisTekst1() {
+    if (one) {
+        document.getElementById("hiddenText1").style.display = "contents";
+        document.getElementById("lesmer1btn").innerHTML = "Les mindre";
+        one = false;
+    } else {
+        document.getElementById("hiddenText1").style.display = "none";
+        document.getElementById("lesmer1btn").innerHTML = "Les mer";
+        one = true;
     }
-
-
-
-   /* if (dotter.style.display == none) { 
-        dotter.style.display = 'inline';
-        knapp_lesText.innerHTML = 'Les mer';
-        merText.style.display = 'none';
-    } 
-    else { 
-        dotter.style.display ='none';
-        knapp_lesText.innerHTML = 'Les mindre';
-        merText.style.display = 'inline';
-    }*/
+    
 }
 
+function hvisTekst2() {
+    if (two) {
+        document.getElementById("hiddenText2").style.display = "contents";
+        document.getElementById("lesmer2btn").innerHTML = "Les mindre";
+        two = false;
+    } else {
+        document.getElementById("hiddenText2").style.display = "none";
+        document.getElementById("lesmer2btn").innerHTML = "Les mer";
+        two = true;
+    }
+    
+}
+
+function hvisTekst3() {
+    if (three) {
+        document.getElementById("hiddenText3").style.display = "contents";
+        document.getElementById("lesmer3btn").innerHTML = "Les mindre";
+        three = false;
+    } else {
+        document.getElementById("hiddenText3").style.display = "none";
+        document.getElementById("lesmer3btn").innerHTML = "Les mer";
+        three = true;
+    }
+    
+}
