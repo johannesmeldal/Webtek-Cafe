@@ -11,15 +11,21 @@
         .slideshow-container {
             position: relative;
             width: 100%; /* Unnecessary? */
-            height: 520px; /* Adjust to window size? */
+            height: 400px; /* Adjust to window size? + Dont show when window is small */
         }
 
-        /* Apply this styling to slides-class instead of img */
-        img {
+        .slide {
             position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
         }
 
         /* Make slideshow images fill width of browser window */
@@ -35,39 +41,33 @@
     <!-- Wrapper for slideshow -->
 
     <div class="slideshow-container">
-        <div class="slides">
-            <img src="img/slideshow_1.jpg" alt="Cafe table">
-        </div>
-
-
-        <div class="slides">
-            <img src="img/slideshow_2.jpg" alt="Programming in cafe">
-        </div>
-
-
-        <div class="slides">
-            <img src="img/slideshow_3.jpg" alt="Computer on cafe table">
-        </div>
+        <img src="img/slideshow_6.jpg" class="slide" alt="Pouring milk in coffeecup">
+        <img src="img/slideshow_1.jpg" class="slide" alt="Cafe table">
+        <img src="img/slideshow_2.jpg" class="slide" alt="Programming in cafe">
+        <img src="img/slideshow_4.jpg" class="slide" alt="Coffeecups">
+        <img src="img/slideshow_13.jpg" class="slide" alt="Programming">
+        <img src="img/slideshow_5.jpg" class="slide" alt="Cafe overview">
     </div>
 
+    <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe">
 
     <script>
 
         function slideshow() {
             var i;
-            var slides = document.getElementsByClassName("slides");
-            
+            var slides = document.getElementsByClassName("slide");
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            
+
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1
             }
-            
+
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(slideshow, 3500); // Change image every 4 seconds
+            setTimeout(slideshow, 3000); // Change image every 3 seconds
         }
 
         var slideIndex = 0;
