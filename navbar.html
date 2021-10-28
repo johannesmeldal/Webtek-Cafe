@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <style> 
-    ul { 
+    /*ul { 
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -23,17 +23,34 @@
         padding: 10px;
         background-color: navajowhite;
     }
-
+*/
     body { 
-        margin: 0%;
+        margin: 0;
+    } 
+
+    .navbar { 
+        overflow: hidden;
+        background-color: indianred;
     }
+
+    .navbar a { 
+        float: left;
+        color: antiquewhite;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+
 </style>
 <body>
-    <ul> 
-        <li> <a href="index.html"> Hjem </a></li> 
-        <li> <a href="meny.html"> Meny </a></li> 
-        <li> <a href="kampanjer.html"> Kampanjer </a></li> 
-        <li> <a href="arrangementer.html"> Arrangementer </a></li> 
-        <li> <a href="omoss.html"> Om oss </a></li> 
+    <div class="navbar"> 
+        <a href="index.html"> Hjem </a>
+        <a href="meny.html"> Meny </a>
+        <a href="kampanjer.html"> Kampanjer </a>
+        <a href="arrangementer.html"> Arrangementer </a>
+        <a href="omoss.html"> Om oss </a>
+    </div>
 </body>
 </html>
