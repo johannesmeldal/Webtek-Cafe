@@ -7,61 +7,53 @@
     <title>Document</title>
 </head>
 <style> 
-    /*ul { 
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+
+    body { 
+        background-color:rgb(216, 190, 156);
     }
 
-    li { 
-        display: inline;
-        float: left;
-    }
-
-    a { 
-        display: block;
-        padding: 10px;
-        background-color: navajowhite;
-    }
-*/
-    .navbar { 
-        overflow: hidden;
-        background-color: indianred;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
+    .nav{
+        /*border:1px solid #ccc;
+        border-width:1px 0; */
+        margin: -15px;
+        list-style:none;
+        text-align:center;
+        background-color: antiquewhite;
+        position: fixed; 
+        top: 0; 
         width: 100%;
     }
 
-    .navbar a { 
-        float: left;
-        color: antiquewhite;
-        text-align: center;
-        padding: 30px;
-        padding-inline: 50px;
-        text-decoration: none;
+    .nav li{
+        display:inline;
+    }
+
+    .nav a{
+        display:inline-block;
+        padding:35px;
         font-size: 20px;
+        color: rgb(60, 77, 31);
+        text-decoration: none;
     }
 
     a:hover { 
-        background-color: blanchedalmond;
-        color: black;
-    }
-
-    a.active { 
-        background-color: darkkhaki;
+        background-color: rgb(60, 77, 31);
         color: antiquewhite;
     }
 
+    .navbar_logo { 
+        
+    }
+
+
 </style>
 <body>
-    <div class="navbar"> 
-        <a href="index.html"> HJEM </a>
-        <a href="meny.html"> MENY </a>
-        <a href="kampanjer.html"> KAMPANJER </a>
-        <a href="arrangementer.html"> ARRANGEMENTER </a>
-        <a href="omoss.html"> OM OSS </a>
-    </div>
+    <ul class="nav"> 
+       <li> <a href="index.html" id="navbar_logo"> <img src="img/forside_logo-removebg-preview.png"/> </a></li>
+        <li> <a href="meny.html"> MENY </a> </li>
+        <li> <a href="kampanjer.html"> KAMPANJER </a> </li>
+        <li> <a href="arrangementer.html"> ARRANGEMENTER </a> </li>
+        <li> <a href="omoss.html"> OM OSS </a> </li>
+    </ul>
 </body>
 </html>
