@@ -24,33 +24,45 @@
         background-color: navajowhite;
     }
 */
-    body { 
-        margin: 0;
-    } 
-
     .navbar { 
         overflow: hidden;
         background-color: indianred;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        white-space: nowrap;
     }
 
     .navbar a { 
         float: left;
         color: antiquewhite;
         text-align: center;
-        padding: 14px 16px;
+        padding: 30px;
+        padding-inline: 80px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 26.5px;
     }
 
+    a:hover { 
+        background-color: blanchedalmond;
+        color: black;
+    }
+
+    a.active { 
+        background-color: darkkhaki;
+        color: antiquewhite;
+    }
 
 </style>
 <body>
     <div class="navbar"> 
-        <a href="index.html"> Hjem </a>
-        <a href="meny.html"> Meny </a>
-        <a href="kampanjer.html"> Kampanjer </a>
-        <a href="arrangementer.html"> Arrangementer </a>
-        <a href="omoss.html"> Om oss </a>
+        <a href="index.html"> HJEM </a>
+        <a href="meny.html"> MENY </a>
+        <a href="kampanjer.html"> KAMPANJER </a>
+        <a href="arrangementer.html"> ARRANGEMENTER </a>
+        <a href="omoss.html"> OM OSS </a>
     </div>
 </body>
 </html>
