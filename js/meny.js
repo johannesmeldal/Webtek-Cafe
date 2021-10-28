@@ -65,13 +65,13 @@ salater = [
     description: "kylling, krutonger, cherrytomater, feta",
     price: 169,
     quantity: 0},
-    {name: "Salat 2",
-    description: "Innhold",
-    price: 100,
+    {name: "Kylling og baconsalat",
+    description: "kylling, bacon, cherrytomater, parmesan",
+    price: 189,
     quantity: 0},
-    {name: "Salat 3",
-    description: "Innhold",
-    price: 100,
+    {name: "Salat med råstekte grønnsaker",
+    description: "blomkål, brokkoli, gulrotkrem, egg",
+    price: 149,
     quantity: 0}
 ]
 
@@ -134,17 +134,17 @@ salater.forEach(salat => {
 });
 
 snacks = [
-    {name: "Snack 1",
-    description: "Innhold",
-    price: 100,
+    {name: "Kyllingvinger med aioli",
+    description: "Inneholder egg",
+    price: 89,
     quantity: 0},
-    {name: "Snack 2",
-    description: "Innhold",
-    price: 100,
+    {name: "Fries/søtpotet med aioli",
+    description: "Inneholder egg",
+    price: 69,
     quantity: 0},
-    {name: "Snack 3",
-    description: "Innhold",
-    price: 100,
+    {name: "Hvitløksbrød med aioli",
+    description: "Innhold gluten, melk og egg",
+    price: 59,
     quantity: 0}
 ]
 
@@ -205,17 +205,17 @@ snacks.forEach(snack => {
 });
 
 kaker = [
-    {name: "Kake 1",
-    description: "Innhold",
-    price: 100,
+    {name: "Sjokoladekake",
+    description: "Inneholder gluten, egg og melk",
+    price: 59,
     quantity: 0},
-    {name: "Kake 2",
-    description: "Innhold",
-    price: 100,
+    {name: "Ostekake",
+    description: "Innholder gluten (hvete)",
+    price: 59,
     quantity: 0},
-    {name: "Kake 3",
-    description: "Innhold",
-    price: 100,
+    {name: "Brownie med is",
+    description: "Innholder egg, gluten, melk",
+    price: 69,
     quantity: 0}
 ]
 
