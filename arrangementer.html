@@ -16,23 +16,23 @@
     .container {
         position: relative;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.3;
-        margin-bottom: 20px;
+        align-items: center; 
+        justify-content: center; 
+        line-height: 1.4;
+        margin-bottom: 10px;
       }
-    .img {
+    img {
         width: 500px;
-        height: 350px;
+        height: 380px;
       }
 
     .text {
         height: 361px;
         font-size: 20px;
         padding-left: 20px;
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: start; */ 
         max-height: 361px;
     }
     .toptext { 
@@ -44,9 +44,8 @@
     #hiddenText1, #hiddenText2, #hiddenText3 { 
         display: none;
     }
-    #del1 {
-        margin: 0;
-    }
+
+    
     #lesmer1btn, #lesmer2btn, #lesmer3btn {
         position: absolute;
         bottom: 5px;
@@ -57,11 +56,11 @@
     <h1> Kommende arrangementer </h1>
     <div class="container"> 
         <div class="img">
-        <img src= img/js.png alt="Javascript logo" id="js"/>
+            <img src= img/js.png alt="Javascript logo" id="js"/>
         </div>
         <div class="text">
         <p class="toptext" > Programmeringskveld for 15 - 25 år </p>
-            <p class="del1"> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! <br>
+            <p> IT blir bare en større og større del av livene våre, og vi ønsker å bidra til å forme fremtidige programmerere! <br>
                 Velkommen til en koselig kveld for alle nivåer! Her går vi gjennom blant annet grunnleggende programmering og ulike programmeringsspråk. 
                 Vi har erfarne fagfolk som er der for å hjelpe deg til å bli flinkere, og kan hjelpe med oppgaver. <br> Her kan man også jobbe med ulike skoleoppgaver 
             </p>
@@ -74,11 +73,11 @@
     </div>
     <div class="container"> 
         <div class="img">
-        <img src=img/arrangement1.jpg alt="programming" id="prog"/>
+            <img src=img/arrangement1.jpg alt="programming" id="prog"/>
         </div>
         <div class="text">
             <p class="toptext"> Programmeringskveld for 40 år og over </p>
-            <p class="del1"> Det er aldri for sent å begynne å lære seg programmering! <br> 
+            <p> Det er aldri for sent å begynne å lære seg programmering! <br> 
                 Denne kvelden kan alle programmere - på egne premisser. Det vil bli være mange ulike aktivitetsforslag for alle nivåer. 
                 Vi har dyktige fagfolk som hjelper deg på veien. </p>
             <p id="hiddenText2">
@@ -91,11 +90,11 @@
 
     <div class="container"> 
         <div class="img">
-        <img src= img/arrangement_jul.jpg alt="Christmas" id="christmas" />
+            <img src= img/arrangement_jul.jpg alt="Christmas" id="christmas" />
         </div>
         <div class="text">
         <p class="toptext"> Juleverksted </p>
-        <p class="del1"> Kom hit for et lite avbrekk fra skole, studie og julestresset! Ta med deg familie, venner eller andre for et koselig juleverksted. 
+        <p> Kom hit for et lite avbrekk fra skole, studie og julestresset! Ta med deg familie, venner eller andre for et koselig juleverksted. 
             Her kan du lage kort, julepynt, julegaver og smykker, samt pynte pepperkaker. 
             Vi serverer mandel i grøten til de oppmøtte, og det venter en premie til vinneren!</p>
         <p id="hiddenText3">
