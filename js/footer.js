@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Footer</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<style>
-
-</style>
-<body>
+document.write(`
 <div class="footer">
         <div id="aapningstider">
             <b>ÅPNINGSTIDER WEBTEK CAFE</b> <br>
@@ -36,5 +25,4 @@
             <b>Utviklet og designet av:</b> August Nyheim, Johannes Meldal, Anine Olafsen, Martine Nilsen & Elin Bjerve
             </div>
 </div>
-</body>
-</html>
+`);
