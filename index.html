@@ -9,10 +9,8 @@
 
     <style>
         .slideshow-container {
-            /* Unnecessary? */
-            width: 100%;
-            /* Adjust to window size? + Dont show when window is small */
-            height: 35vw;
+            /* Adjust to window size */
+            height: 50vh;
         }
 
         .slide {
@@ -31,7 +29,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 25%;
+            width: 310px;
         }
 
         /* Make slideshow images fill width of browser window */
@@ -44,26 +42,31 @@
             cursor: pointer;
             height: 15px;
             width: 15px;
-            margin: 0 2px;
             background-color: white;
             border-radius: 50%;
-            display: inline-block;
-            bottom: 10px;
             z-index: 2;
-            position: absolute;
 
         }
 
         #dot-container {
-            text-align:center;
+            text-align: center;
+            height: 15px;
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /*
+        
         .active,
         .dot:hover {
             background-color: #717171;
-        }*/
-
+        }
     </style>
 
 </head>
@@ -99,10 +102,13 @@
     <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe">
 
     <script>
+        var slides = document.getElementsByClassName("slide");
+        var i;
+        var slideIndex = 0;
+        slideshow();
+
 
         function slideshow() {
-            var i;
-            var slides = document.getElementsByClassName("slide");
 
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
@@ -114,7 +120,7 @@
             }
 
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(slideshow, 3000); // Change image every 3 seconds
+            var loop = setTimeout(slideshow, 3000); // Change image every 3 seconds
         }
         /*
         function nextSlide() {
@@ -124,16 +130,15 @@
             stopSlideshow = false;
         }*/
 
-        var slideIndex = 0;
         var stopSlideshow = false;
-        slideshow();
 
 
         // TODO - Connect function to dots
         function switchSlide(n) {
             //stopSlideshow = true;
             slideIndex = n;
-            //slideshow();
+            slideshow();
+            clearTimeout(loop);
         }
 
     </script>
