@@ -21,7 +21,7 @@ drikker.forEach(drikke => {
     var name = document.createElement("p");
     name.innerText = drikke.name+" - ";
     var price = document.createElement("p");
-    price.innerText = drikke.price;
+    price.innerText = drikke.price+",-";
     var quant = document.createElement("p");
     quant.innerText = drikke.quantity;
     var less = document.createElement("button")
@@ -86,7 +86,7 @@ salater.forEach(salat => {
     var name = document.createElement("p");
     name.innerText = salat.name+" - ";
     var price = document.createElement("p");
-    price.innerText = salat.price;
+    price.innerText = salat.price+",-";
     var quant = document.createElement("p");
     quant.innerText = salat.quantity;
     var less = document.createElement("button")
@@ -159,7 +159,7 @@ snacks.forEach(snack => {
     var name = document.createElement("p");
     name.innerText = snack.name+" - ";
     var price = document.createElement("p");
-    price.innerText = snack.price;
+    price.innerText = snack.price+",-";
     var quant = document.createElement("p");
     quant.innerText = snack.quantity;
     var less = document.createElement("button")
@@ -230,7 +230,7 @@ kaker.forEach(kake => {
     var name = document.createElement("p");
     name.innerText = kake.name+" - ";
     var price = document.createElement("p");
-    price.innerText = kake.price;
+    price.innerText = kake.price+",-";
     var quant = document.createElement("p");
     quant.innerText = kake.quantity;
 
@@ -325,7 +325,6 @@ function bestill() {
     }
 
     document.getElementById("menu").innerHTML = null;
-    
     document.getElementById("menu").appendChild(section1);
     document.getElementById("menu").appendChild(section2);
     document.getElementById("menu").appendChild(section3);
