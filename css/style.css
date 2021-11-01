@@ -48,10 +48,41 @@ body {
 #indeximg { 
     margin-top: 15px;
 }
+.navforside{
+    /*border:1px solid #ccc;
+    border-width:1px 0; */
+    margin-top: 0px;
+    margin-bottom: -15px;
+    margin-left: -40px;
+    margin-right: -40px;
+    list-style:none;
+    text-align:center;
+    background-color: antiquewhite;
+    top: 50vh;
+    width: 100%;
+}
+
+.navforside li{
+    display:inline;
+}
+
+.navforside a{
+    display:inline-block;
+    padding:40px;
+    font-size: 20px;
+    color: rgb(60, 77, 31);
+    text-decoration: none;
+}
+
+.navforside a:hover { 
+    background-color: rgb(60, 77, 31);
+    color: antiquewhite;
+}
+
 @media only screen and (max-width: 1026px) and (min-width: 961px){
     .nav a{
-        padding-left: 28px;
-        padding-right: 28px;
+        padding-left: 12vw;
+        padding-right: 12vw;
         }
 }
 
@@ -64,6 +95,13 @@ body {
         padding-bottom: 574px;
     }
     #tilbud {
+        padding-bottom: 574px;
+    }
+    #logo {
+        padding-bottom: 574px;
+        min-height: calc(50vh - 103px);
+    }
+    #siste-arrangement {
         padding-bottom: 574px;
     }
     .footer {
@@ -92,6 +130,10 @@ body {
         padding-bottom: 10px;
         width: 60%;
     }
+    .navforside a{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
 }
 
 @media only screen and (min-width: 960px){
@@ -111,6 +153,14 @@ body {
         padding-bottom: 315px;
     }
     #tilbud {
+        padding-bottom: 315px;
+        min-height: calc(100vh - 170px);
+    }
+    #logo {
+        padding-bottom: 315px;
+        min-height: calc(50vh - 103px);
+    }
+    #siste-arrangement {
         padding-bottom: 315px;
     }
 }
@@ -255,4 +305,140 @@ body {
     position: relative;
     min-height: 100vh;
     margin-top: 50px;
+}
+.slideshow-container {
+    height: 50vh;
+}
+
+.slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.slideshow {
+    position: relative;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    border: solid 2px;
+}
+
+.dot:hover {
+    background-color: #717171 !important;
+}
+
+#dot-container {
+    text-align: center;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tilbud {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    color: black;
+    border-image: solid;
+}
+#tilbud_en {
+    display: flex;
+    justify-content: start;
+    height: auto;
+    margin-bottom: 20px;
+}
+#tilbud_to {
+    display: flex;
+    justify-content: end;
+    height: auto;
+}
+.textdiv {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 320px;
+}
+.textdiv p {
+    margin: 0;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+.italics {
+    text-transform: none;
+}
+.kampheader {
+    color: #6da07f;
+    text-align: center;
+}
+#arrh1 { 
+    text-align: center;
+    font-size: 50px;
+    padding-left: 50px;
+}
+.container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+.arrimg {
+    width: 500px;
+    height: 380px;
+  }
+
+.text {
+    height: 321px;
+    font-size: 20px;
+    padding-left: 20px;
+    max-height: 321px;
+    align-self: flex-start;
+    overflow: auto;
+}
+.toptext { 
+    font-size: 30px;
+    color: #6da07f;
+    font-weight: bold;
+    margin: 0;
+}
+#hiddenText1, #hiddenText2, #hiddenText3 { 
+    display: none;
+}
+#lesmer1btn, #lesmer2btn {
+    position: absolute;
+    bottom: 5px;
+    left: 520px;
+}
+#lesmer3btn {
+    position: absolute;
+    bottom: 320px;
+    left: 520px;
 }
