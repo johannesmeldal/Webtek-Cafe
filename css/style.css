@@ -1,7 +1,58 @@
 body {
-    background-color: rgb(216, 190, 156);
+    background-color: hsl(34, 67%, 86%);
     font-family: 'Nunito', sans-serif;
-    margin:0;
+    margin: 0;
+}
+.nav{
+    /*border:1px solid #ccc;
+    border-width:1px 0; */
+    margin: -40px;
+    margin-top: -55px;
+    list-style:none;
+    text-align:center;
+    background-color: antiquewhite;
+    top: 0; 
+    width: 100%;
+    /*display: flex; */
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+    padding:35px;
+    font-size: 20px;
+    color: rgb(60, 77, 31);
+    text-decoration: none;
+}
+
+.navlink {
+    color: gray;
+    text-decoration: none;
+}
+
+.navlink:hover { 
+    background-color: rgb(60, 77, 31);
+    color: antiquewhite;
+}
+
+#navbar_logo { 
+    width: 200px;
+    height: 160px;
+    margin-top: -20px;
+    margin-bottom: -70px;
+}
+
+#indeximg { 
+    margin-top: 15px;
+}
+@media only screen and (max-width: 1026px) and (min-width: 961px){
+    .nav a{
+        padding-left: 28px;
+        padding-right: 28px;
+        }
 }
 
 @media only screen and (max-width: 960px){
@@ -33,6 +84,14 @@ body {
         width: 25%;
         line-height: 1;
     }
+    .nav li{
+        display: block;
+    }
+    .nav a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 960px){
@@ -42,25 +101,26 @@ body {
         bottom: 20px;
     }
     .footer {
-        height: 350px;
+        height: 275px;
         padding-top: 20px;
         justify-content: space-evenly;
         width: 100%;
     }
     #menu {
         margin-left: 250px;
-        padding-bottom: 390px;
+        padding-bottom: 315px;
     }
     #tilbud {
-        padding-bottom: 390px;
+        padding-bottom: 315px;
     }
 }
 
 .footer{
     position:absolute;
+    color: white;
     display: flex;
     bottom: 0;
-    background-color: rgb(124, 143, 94);
+    background-color: #4e765c;
 }
 
 #aapningstider, #kontaktinformasjon {
@@ -96,7 +156,7 @@ body {
     width: auto;
 }
 .menuprice {
-    color: green;
+    color: #6da07f;
     font-weight: bold;
     margin: 0;
 }
@@ -107,7 +167,7 @@ body {
 .menuinnerdiv {
     font-size: 30px;
     font-weight: bold;
-    color: green;
+    color: #6da07f;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -119,7 +179,7 @@ body {
     font-weight: bold;
     text-align: center;
     line-height: 40px;
-    color: green;
+    color: #6da07f;
     border: none;
     background-color: transparent;
     height: 40px;
@@ -156,9 +216,16 @@ body {
     font-size: 30px;
 }
 
-a {
-    color: gray;
+#navmenu a {
+    color: #6da07f;
     text-decoration: none;
+}
+
+#navmenu a:hover {
+    color: white;
+}
+.introtekst {
+    text-transform: none;
 }
 
 .punkt{
@@ -170,7 +237,6 @@ a {
 .menubutton{
     width: 100px;
     height: 50px;
-    color:rgb(60, 77, 31);
     font-size: 20px;
     border-radius: 4px;
     background-color: transparent;
@@ -181,7 +247,7 @@ a {
 }
 
 .menubutton:active { 
-    background-color: rgb(60, 77, 31);
+    background-color: #6da07f;
     color: white;
     transform: translateY(4px);
 }
@@ -189,46 +255,4 @@ a {
     position: relative;
     min-height: 100vh;
     margin-top: 50px;
-    display: block;
-}
-
-.nav{
-    /*border:1px solid #ccc;
-    border-width:1px 0; */
-    margin: -40px;
-    margin-top: -55px;
-    list-style:none;
-    text-align:center;
-    background-color: antiquewhite;
-    top: 0; 
-    width: 100%;
-    /*display: flex; */
-}
-
-.nav li{
-    display:inline;
-}
-
-.nav a{
-    display:inline-block;
-    padding:35px;
-    font-size: 20px;
-    color: rgb(60, 77, 31);
-    text-decoration: none;
-}
-
-a:hover { 
-    background-color: rgb(60, 77, 31);
-    color: antiquewhite;
-}
-
-#navbar_logo { 
-    width: 200px;
-    height: 160px;
-    margin-top: -20px;
-    margin-bottom: -70px;
-}
-
-#indeximg { 
-    margin-top: 15px;
 }

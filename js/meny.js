@@ -283,52 +283,57 @@ function bestill() {
     drikker.forEach(drikke => {
         if (drikke.quantity > 0) {
             sum += drikke.price*drikke.quantity;
-            kvittering.innerHTML += drikke.quantity + " x " + drikke.name+" ( "+(drikke.quantity*drikke.price)+",- )</br>";
+            kvittering.innerHTML += drikke.quantity + " x " + drikke.name+" ( "+drikke.price+",- )</br>";
         }
     })
     salater.forEach(salat => {
         if (salat.quantity > 0) {
             sum += salat.price*salat.quantity;
-            kvittering.innerHTML += salat.quantity + " x " + salat.name+" ( "+(salat.quantity*salat.price)+",- )</br>";
+            kvittering.innerHTML += salat.quantity + " x " + salat.name+" ( "+salat.price+",- )</br>";
         }
     })
     snacks.forEach(snack => {
         if (snack.quantity > 0) {
             sum += snack.price*snack.quantity
-            kvittering.innerHTML += snack.quantity + " x " + snack.name+" ( "+(snack.quantity*snack.price)+",- )</br>";
+            kvittering.innerHTML += snack.quantity + " x " + snack.name+" ( "+snack.price+",- )</br>";
         }
         
     })
     kaker.forEach(kake => {
         if (kake.quantity > 0) {
             sum += kake.price*kake.quantity
-            kvittering.innerHTML += kake.quantity + " x " + kake.name + " ("+(kake.quantity*kake.price)+",-)</br>";
+            kvittering.innerHTML += kake.quantity + " x " + kake.name + " ("+kake.price+",- )</br>";
         }
         
     })
-    console.log(kvittering);
-    var section1 = document.createElement("section");
-    section1.className = "menusection";
-    section1.innerHTML = "Takk for din bestilling!</br></br>Vedlagt finner du kvitteringen:</br></br>";
-    var section2 = document.createElement("section");
-    section2.className = "menusection";
-    section2.appendChild(kvittering);
-    var section3 = document.createElement("section");
-    section3.className = "menusection";
-    section3.innerHTML = "</br>Total sum: " + sum + ",-</br></br>";
 
-    var returnbutton = document.createElement("button");
-    returnbutton.innerHTML = "Return to menu";
-    returnbutton.className = "menubutton"
-    returnbutton.onclick = () => {
-        window.location.href = 'meny.html';
+    if (sum == 0) {
+        alert("Vennligst bestill minst 1 ting fra menyen!");
+    } else {
+        console.log(kvittering);
+        var section1 = document.createElement("section");
+        section1.className = "menusection";
+        section1.innerHTML = `<b class="introtekst">Takk for din bestilling!</br></br>Vedlagt finner du kvitteringen:</b></br></br>`;
+        var section2 = document.createElement("section");
+        section2.className = "menusection";
+        section2.appendChild(kvittering);
+        var section3 = document.createElement("section");
+        section3.className = "menusection";
+        section3.innerHTML = "</br><b>Total sum: " + sum + ",-</b></br></br>";
+
+        var returnbutton = document.createElement("button");
+        returnbutton.innerHTML = "Return to menu";
+        returnbutton.className = "menubutton"
+        returnbutton.onclick = () => {
+            window.location.href = 'meny.html';
+        }
+
+        document.getElementById("menu").innerHTML = null;
+        document.getElementById("menu").appendChild(section1);
+        document.getElementById("menu").appendChild(section2);
+        document.getElementById("menu").appendChild(section3);
+        document.getElementById("menu").innerHTML += "</br>";
+        document.getElementById("menu").appendChild(returnbutton);
+        document.getElementById("navmenu").style.display = "none";
     }
-
-    document.getElementById("menu").innerHTML = null;
-    document.getElementById("menu").appendChild(section1);
-    document.getElementById("menu").appendChild(section2);
-    document.getElementById("menu").appendChild(section3);
-    document.getElementById("menu").innerHTML += "</br>";
-    document.getElementById("menu").appendChild(returnbutton);
-    document.getElementById("navmenu").style.display = "none";
 }
