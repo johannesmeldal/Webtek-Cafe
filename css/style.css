@@ -80,10 +80,21 @@ body {
 }
 
 @media only screen and (max-width: 1026px) and (min-width: 961px){
+    .nav li{
+        display: block;
+    }
     .nav a{
-        padding-left: 12vw;
-        padding-right: 12vw;
-        }
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 60%;
+    }
+    .navforside a{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    #text {
+        min-height: 60vh;
+    }
 }
 
 @media only screen and (max-width: 960px){
@@ -134,6 +145,23 @@ body {
         padding-left: 1vw;
         padding-right: 1vw;
     }
+    #container {
+        padding-bottom: 574px;
+    }
+    #cofee {
+        right: 0vw;
+        width: 70vw;
+        min-height: calc(60vh + 56px);
+    }
+    #textbox {
+        left: 0vw;
+        width: 70vw;
+        max-height: 50vh;
+    }
+    #text {
+        overflow-y: scroll;
+        height: 60vh;
+    }
 }
 
 @media only screen and (min-width: 960px){
@@ -162,6 +190,15 @@ body {
     }
     #siste-arrangement {
         padding-bottom: 315px;
+    }
+    #cofee {
+        right: 10vw;
+    }
+    #textbox {
+        left: 10vw;
+    }
+    #container {
+        padding-bottom: 295px;
     }
 }
 
@@ -304,7 +341,7 @@ body {
 .page-container{
     position: relative;
     min-height: 100vh;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .slideshow-container {
     height: 50vh;
@@ -441,4 +478,35 @@ body {
     position: absolute;
     bottom: 320px;
     left: 520px;
+}
+#container{
+    height: calc(100vh - 90px);
+    position: relative;
+    margin: 0;
+}
+#omoss{
+    color: #6da07f;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#textbox{
+    position: absolute;
+    z-index: 2;
+}
+#text {
+    font-size: 20px;
+    color: black;
+    width: 50vw;
+    background-color: white;
+    line-height: 1.5;
+    border: solid black 0.5px;
+    margin: 0;
+}
+#cofee{
+    position: absolute;
+    max-width: 60vw;
+    height: auto;
+    max-height: calc(100vh - 90px);
 }
