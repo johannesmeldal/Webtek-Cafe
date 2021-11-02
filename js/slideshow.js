@@ -2,7 +2,6 @@ var slides = document.getElementsByClassName("slide");
 var dots = document.getElementsByClassName("dot");
 var currentSlide = 0;
 var loop;
-slides[currentSlide].style.display = "block";
 slideshow();
 
 function slideshow() {
