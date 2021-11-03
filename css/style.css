@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(34, 67%, 86%);
+    background-color: hsl(33, 48%, 87%);
     font-family: 'Nunito', sans-serif;
     margin: 0;
 }
@@ -10,7 +10,7 @@ body {
     margin-top: -55px;
     list-style:none;
     text-align:center;
-    background-color: antiquewhite;
+    background-color: rgb(243, 243, 243);
     top: 0; 
     width: 100%;
     /*display: flex; */
@@ -24,7 +24,7 @@ body {
     display:inline-block;
     padding:35px;
     font-size: 20px;
-    color: rgb(60, 77, 31);
+    color: #467257;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ body {
     margin-right: -40px;
     list-style:none;
     text-align:center;
-    background-color: antiquewhite;
+    background-color: #467257;
     top: 50vh;
     width: 100%;
 }
@@ -72,6 +72,7 @@ body {
     font-size: 20px;
     color: rgb(60, 77, 31);
     text-decoration: none;
+    color: antiquewhite;
 }
 
 .navforside a:hover { 
@@ -448,7 +449,7 @@ body {
     margin-top: 10px;
   }
 .arrimg {
-    width: 500px;
+    min-width: 500px;
     height: 380px;
   }
 
@@ -469,14 +470,9 @@ body {
 #hiddenText1, #hiddenText2, #hiddenText3 { 
     display: none;
 }
-#lesmer1btn, #lesmer2btn {
+#lesmer1btn, #lesmer2btn, #lesmer3btn {
     position: absolute;
     bottom: 5px;
-    left: 520px;
-}
-#lesmer3btn {
-    position: absolute;
-    bottom: 320px;
     left: 520px;
 }
 #container{
@@ -499,10 +495,11 @@ body {
     font-size: 20px;
     color: black;
     width: 50vw;
-    background-color: white;
+    background-color: rgb(252, 245, 236);
     line-height: 1.5;
-    border: solid black 0.5px;
     margin: 0;
+    padding: 5px;
+    opacity: 95%;
 }
 #cofee{
     position: absolute;

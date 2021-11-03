@@ -143,7 +143,7 @@ snacks = [
     price: 69,
     quantity: 0},
     {name: "Hvitløksbrød med aioli",
-    description: "Innhold gluten, melk og egg",
+    description: "Inneholder gluten, melk og egg",
     price: 59,
     quantity: 0}
 ]
@@ -322,7 +322,7 @@ function bestill() {
         section3.innerHTML = "</br><b>Total sum: " + sum + ",-</b></br></br>";
 
         var returnbutton = document.createElement("button");
-        returnbutton.innerHTML = "Return to menu";
+        returnbutton.innerHTML = "Tilbake til menyen";
         returnbutton.className = "menubutton"
         returnbutton.onclick = () => {
             window.location.href = 'meny.html';
