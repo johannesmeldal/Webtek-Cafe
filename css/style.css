@@ -323,19 +323,21 @@ body {
 }
 
 .menubutton{
-    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
     height: 50px;
     font-size: 20px;
     border-radius: 4px;
-    background-color: transparent;
+    pbackground-color: antiquewhite;
 }
 
 .menubutton:hover {
-    background-color: antiquewhite;
+    background-color: #6da07f;
 }
 
 .menubutton:active { 
-    background-color: #6da07f;
+    background-color: #52775f;
     color: white;
     transform: translateY(4px);
 }
@@ -506,4 +508,59 @@ body {
     max-width: 60vw;
     height: auto;
     max-height: calc(100vh - 90px);
+}
+.submitbutton{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 4px;
+    pbackground-color: antiquewhite;
+}
+
+.submitbutton:hover {
+    background-color: #6da07f;
+}
+
+.submitbutton:active { 
+    background-color: #52775f;
+    color: white;
+    transform: translateY(4px);
+}
+#returndiv {
+    padding-top: 20px;
+    padding-left: 10vw;
+    color: "black";
+    font-size: 30px;
+}
+#feedback{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
+
+#feedback:hover {
+    background-color: #6da07f;
+}
+
+#feedback:active { 
+    background-color: #52775f;
+    color: white;
+    transform: translateY(4px);
+}
+#feedbackarea {
+    background-color: white;
+}
+#feedbackdiv {
+    padding-top: 20px;
+    padding-left: 10vw;
+    line-height: 1.5;
+}
+#name, #email, #feedbackarea {
+    width: 50vh;
 }

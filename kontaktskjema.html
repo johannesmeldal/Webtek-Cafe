@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Kontaktskjema | Webtek Kafe</title>
+</head>
+<body>
+    <script src="js/navbar.js"></script>
+    <div class="page-container">
+        <div id="feedbackdiv">
+            <form action="kontaktskjemareturn.html" method="post">
+                <label for="name">Navn:</label><br>
+                <input type="text" id="name" name="name" placeholder="Skriv in ditt navn..." required><br>
+                <label for="email">Epostadresse:</label><br>
+                <input type="email" id="email" name="email" placeholder="Skriv in din epostadresse..." required><br>
+                <label for="feedback">Tilbakemelding:</label><br>
+                <textarea name="feedback" id="feedbackarea" cols="30" rows="10" placeholder="Skriv in din tilbakemelding..." required></textarea><br><br>
+                <input type="submit" class="submitbutton" value="Send tilbakemelding" onclick="tilbake()">
+            </form>
+        </div>
+        <script src="js/footer.js"></script>
+    </div>
+</body>
+</html>
