@@ -116,6 +116,14 @@ body {
     #siste-arrangement {
         padding-bottom: 574px;
     }
+    #feedbackdiv {
+        padding-bottom: 574px;
+        min-height: calc(50vh - 103px);
+    }
+    #returndiv {
+        padding-bottom: 574px;
+        min-height: calc(50vh - 103px);
+    }
     .footer {
         flex-direction: column;
         padding-left: 25%;
@@ -200,6 +208,14 @@ body {
     }
     #container {
         padding-bottom: 295px;
+    }
+    #feedbackdiv {
+        padding-bottom: 315px;
+        min-height: calc(100vh - 170px);
+    }
+    #returndiv {
+        padding-bottom: 315px;
+        min-height: calc(100vh - 170px);
     }
 }
 
