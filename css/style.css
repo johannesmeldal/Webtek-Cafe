@@ -1,5 +1,6 @@
 body {
-    background-color: hsl(33, 48%, 87%);
+    /*background-color: hsl(33, 48%, 87%); */
+    background-color: rgb(248, 239, 227);
     font-family: 'Nunito', sans-serif;
     margin: 0;
 }
@@ -10,7 +11,7 @@ body {
     margin-top: -55px;
     list-style:none;
     text-align:center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(235, 216, 199); 
     top: 0; 
     width: 100%;
     /*display: flex; */
@@ -34,8 +35,8 @@ body {
 }
 
 .navlink:hover { 
-    background-color: rgb(60, 77, 31);
-    color: antiquewhite;
+    background-color: rgb(252, 245, 236);
+    color: #467257;
 }
 
 #navbar_logo { 
@@ -76,8 +77,8 @@ body {
 }
 
 .navforside a:hover { 
-    background-color: rgb(60, 77, 31);
-    color: antiquewhite;
+    background-color: rgb(252, 245, 236);
+    color: rgb(60, 77, 31);
 }
 
 @media only screen and (max-width: 1026px) and (min-width: 961px){
@@ -224,7 +225,7 @@ body {
     color: white;
     display: flex;
     bottom: 0;
-    background-color: #4e765c;
+    background-color:#467257;
 }
 
 #aapningstider, #kontaktinformasjon {
@@ -326,7 +327,7 @@ body {
 }
 
 #navmenu a:hover {
-    color: white;
+    color: rgb(136, 116, 90);
 }
 .introtekst {
     text-transform: none;
@@ -345,7 +346,7 @@ body {
     height: 50px;
     font-size: 20px;
     border-radius: 4px;
-    pbackground-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 .menubutton:hover {
@@ -450,7 +451,7 @@ body {
     text-transform: none;
 }
 .kampheader {
-    color: #6da07f;
+    color: #467257;
     text-align: center;
 }
 #arrh1 { 
@@ -481,7 +482,7 @@ body {
 }
 .toptext { 
     font-size: 30px;
-    color: #6da07f;
+    color: #467257;
     font-weight: bold;
     margin: 0;
 }
@@ -499,7 +500,7 @@ body {
     margin: 0;
 }
 #omoss{
-    color: #6da07f;
+    color: #467257;
     font-size: 30px;
     margin: 0;
     padding-top: 10px;
@@ -532,7 +533,7 @@ body {
     height: 50px;
     font-size: 20px;
     border-radius: 4px;
-    pbackground-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 .submitbutton:hover {
@@ -571,6 +572,9 @@ body {
 }
 #feedbackarea {
     background-color: white;
+    /*max-width: 50vh;
+    max-height: 30vh; */
+    
 }
 #feedbackdiv {
     padding-top: 20px;
@@ -579,4 +583,11 @@ body {
 }
 #name, #email, #feedbackarea {
     width: 50vh;
+}
+
+#box { 
+    background-color: #467257;
+    padding: 5vh;
+    width: 90vh;
+    
 }
