@@ -7,7 +7,6 @@ document.write(`
         <li> <a class="navlink" href="omoss.html"> OM OSS </a> </li>
     </ul>
 `)
-<<<<<<< HEAD
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -24,5 +23,3 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
   }); 
-=======
->>>>>>> f893faf9a0edb9df97b9684092ebf92cc11f1200
