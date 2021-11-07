@@ -113,6 +113,7 @@ body {
         min-height: calc(50vh - 103px);
     }
     #siste-arrangement {
+        margin: 0;
         padding-bottom: 574px;
     }
     #feedbackdiv {
@@ -198,6 +199,7 @@ body {
     }
     #siste-arrangement {
         padding-bottom: 315px;
+        margin: 0;
     }
     #cofee {
         right: 10vw;
@@ -206,7 +208,7 @@ body {
         left: 10vw;
     }
     #container {
-        padding-bottom: 295px;
+        padding-bottom: 325px;
     }
     #feedbackdiv {
         padding-bottom: 315px;
