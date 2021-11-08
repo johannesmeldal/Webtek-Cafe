@@ -24,9 +24,18 @@
             også mulig å se hvor i slideshowet bildet som vises er, ved å se på fargene på dottene.
         </p>
         <p><b>meny.js: </b>
-            Funksjonen er i stor grad som planlagt. Det er lagt inn funksjonalitet for å unngå at kundene bestiller under 0, 
+            Funksjonen er i stor grad som planlagt. Det er lagt inn funksjonalitet for å unngå at kundene bestiller under 0 
             eller over 6 av en vare i menyen.
         <p> 
+        <p><b>bestilling.js: </b>
+            Funksjonen fungerer akuratt som planlagt. For å gjøre det mere lettvint, ligger all koden i meny.js. Dette er fordi
+            funksjonen bygger på de samme variablene som meny-funksjonen. Likevell er begge funksjonene såpass omfattende, at selv om
+            begge ligger i samme fil, regner vi de som 2 forskjellige funksjoner.
+        </p>
+        <p><b>navbar.js: </b>
+            Et stykke inn i kodingen lærte vi at navbaren fungerer helt finn med ren html. Denne JavaScript funksjonen har vi valgt
+            å bytte ut med en ny funksjon "", for å tilfredsstille kravet om 4 JavaScript-funksjoner.
+        </p>
             <b>Endringer i CSS: </b></p>
 
             <p><b>Bakgrunnsfarge: </b> Vi valgte å bytte beigefargen til en kaldere hvitfarge. Fargen er rgb (248, 239, 227).
@@ -73,6 +82,46 @@
             worked on which files including CSS and JavaScript files, and who produced the
             artwork (banner and button design, etc.).</h2>
         <p>
+            <h3>Organisering</h3>
+            <p>Liste over filer og mapper:</p>
+            <ul>
+                <li>index.html</li>		
+                <li>meny.html</li>
+                <li>kampanje.html</li>
+                <li>arrangementer.html</li>
+                <li>omoss.html</li>
+                <li>kontaktskjema.html</li>
+                <li>kontaktskjemareturn.html</li>
+                <li>img/
+                    <ul>
+                    <li>background_image.png</li>
+                    <li>background_border.png</li>
+                    <li>Logo.png</li>
+                    <li>slideshow_1.png</li>
+                    <li>slideshow_2.png</li>
+                    <li>slideshow_3.png</li>
+                    <li>slideshow_4.png</li>
+                    <li>slideshow_5.png</li>
+                    <li>...</li>
+                    </ul>
+                    </li>
+                <li>js/
+                    <ul>
+                    <li>slideshow.js</li>
+                    <li>navbar.js</li>
+                    <li>meny.js</li>
+                    <li>arrangementer.js</li>
+                    <li>footer.js</li>
+                    </ul>
+                    </li>
+                <li>css/
+                    <ul>
+                        <li>style.css</li>
+                    </ul>
+                    </li>
+                    
+        <h3> Arbeidsfordelingen </h3>
+        
     <table>
         <tr>
             <th><b>Filnavn</b></th>
@@ -135,11 +184,6 @@
             <td>Martine</td>
         </tr>
         <tr>
-            <td>Bestilling.js</td>
-            <td>JavaScript fil for bestillingssystemet</td>
-            <td>August</td>
-        </tr>
-        <tr>
             <td>Arrangementer.js</td>
             <td>JavaScript fil for arrangmentsiden</td>
             <td>Elin</td>
@@ -147,7 +191,7 @@
         <tr>
             <td>Style.css</td>
             <td>CSS fil som inneholder all styling for websiden</td>
-            <td>AlLe</td>
+            <td>Alle</td>
         </tr>
         <tr>
             <td> Slideshow/banner </td>
