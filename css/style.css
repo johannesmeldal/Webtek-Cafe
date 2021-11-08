@@ -609,3 +609,27 @@ body {
     padding-right: 350px;
     opacity: 95%;
 }
+
+#tid{
+    height: 200px;
+    text-align: center;
+    color: #467257;
+}
+
+.knapper{
+    width: 90px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: antiquewhite;
+
+}
+
+.knapper:hover {
+    background-color: #6da07f;
+}
+
+.knapper:active { 
+    background-color: #52775f;
+    color: white;
+    transform: translateY(4px);
+}
