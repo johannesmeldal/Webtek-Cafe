@@ -4,87 +4,54 @@
 <head>
   <title>Tax forms: Bar chart with lines</title>
   <meta charset="UTF-8">
-  <script src="dagsForms.js"></script>
 </head>
+<style>
+  body {
+    margin: 0;
+  }
+  #canvasdiv {
+    margin: 0;
+    position: relative;
+  }
+  #btndiv {
+    position: absolute;
+    top: 0;
+  }
+  #daydiv {
+    position: absolute;
+    margin: 0;
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .daybtn {
+    width: 70px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: white;
+  }
+  .daybtn:hover {
+    background-color: #6da07f;
+  }
 
+</style>
 <body>
-
-  <canvas id="chart" width="700" height="570"></canvas>
-
-  <script>
-    const canvas = document.getElementById('chart');
-    const context = canvas.getContext('2d');
-
-    /* Draw a line from (fromX, fromY) to (toX, toY) */
-    function drawLine(fromX, fromY, toX, toY) {
-      context.beginPath();
-      context.moveTo(toX, toY);
-      context.lineTo(fromX, fromY);
-      context.stroke();
-    }
-
-    /* Draw a text (string) on (x, y) */
-    function drawText(text, x, y) {
-      context.fillStyle = 'black';
-      context.fillText(text, x, y);
-    }
-
-    /* Draw a text and with a line to its right */
-    function drawLineWithText(text, fromX, fromY, toX, toY) {
-      drawText(text, fromX - 50, fromY + 10);
-      drawLine(fromX, fromY, toX, toY);
-    }
-
-
-    /* Insert your code here. */
-    // Varriables it does actually work to add more elements in if you change reduse the width of the bar or increare the widh of the canvas accordingly...
-    const wCanvas = 500
-    const hCanvas = 500
-    const margin = 50
-    const smallMargin = margin / 2
-    const widthBar = 50
-
-    // for-loop to draw the lines
-    for (let i = 0; i < 11; i++) {
-      drawLineWithText(String(i * 10) + "%", margin, hCanvas + margin - i * (hCanvas + margin) / 11, margin + wCanvas,
-        hCanvas + margin - i * (hCanvas + margin) / 11)
-    }
-
-    // function to draw rectangles width color
-    function drawRect(x, y, w, h, color) {
-      context.fillStyle = color
-      context.fillRect(x, y, w, h)
-    }
-
-    function drawRectWithText(x, y, w, h, color, text) {
-        drawRect(x, y, w, h, color);
-        drawText(text,x,y + 20)
-    }
-
-
-
-
-
-
-
-    // function to draw the graph
-    function drawGraph(timeObj) {
-    const length = Object.keys(timeObj).length
-    let i = 0
-    for (timeIntervall in timeObj) {
-        const height = timeObj[timeIntervall] * 5
-        let incomeProsent = height / 10
-        x = i / (length - 1) * (wCanvas - (margin * 2)) + margin + smallMargin
-        drawRectWithText(x, hCanvas + margin, widthBar, -height, 'red', timeIntervall   )
-        i++
-        }
-
-    }
- //   drawGraph(days["MAN"])
-    drawGraph(days["MAN"])
-//    mandagbtn.onclick(() => drawGraph(days["MAN"]))
-
-  </script>
+  <div id="canvasdiv">
+    <canvas id="chart" width="700" height="570"></canvas>
+    <div id="btndiv">
+      <button id="1" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Mandag</button>
+      <button id="2" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Tirsdag</button>
+      <button id="3" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Onsdag</button>
+      <button id="4" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Torsdag</button>
+      <button id="5" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Fredag</button>
+      <button id="6" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Lørdag</button>
+      <button id="0" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Søndag</button>
+    </div>
+    <div id="daydiv"></div>
+  </div>
+  <script src="rushtider.js"></script>
 </body>
 
 </html>
