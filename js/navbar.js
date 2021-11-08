@@ -7,3 +7,4 @@ document.write(`
         <li> <a class="navlink" href="omoss.html"> OM OSS </a> </li>
     </ul>
 `)
+

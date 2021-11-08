@@ -1,0 +1,69 @@
+body {
+    background-color: antiquewhite;
+    margin-left: 20%;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border: groove;
+    margin-top: 10px;
+}
+
+p {
+    margin-left: 10px;
+    line-height: 20pt;
+}
+li {
+    line-height: 20pt;
+}
+
+h1, h2, h3, h4 {
+    margin-left: 10px;
+    line-height: 20pt;
+}
+
+#date {
+    position: absolute;
+    right: 20%;
+    top: 70px;
+}
+
+#forsidebilde {
+    display: block;
+    border: solid;
+    border-width: 5px;
+    height: 200px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mockup_image {
+    border: solid;
+    border-width: 5px;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mockup_text {
+    text-align: center;
+}
+
+.mockup {
+    display: block;
+    margin-left: 20%;
+    width: 60%;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+table {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
