@@ -1,76 +1,9 @@
+/* Gelder alle sider */
+
 body {
     background-color: rgb(248, 239, 227);
     font-family: 'Nunito', sans-serif;
     margin: 0;
-}
-.nav{
-    margin: -40px;
-    margin-top: -55px;
-    list-style:none;
-    text-align:center;
-    background-color: rgb(235, 216, 199); 
-    top: 0; 
-    width: 100%;
-    margin-bottom: 20px; 
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.39);
-}
-.nav li{
-    display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding:35px;
-    font-size: 20px;
-    color: #467257;
-    text-decoration: none;
-}
-.navlink {
-    color: gray;
-    text-decoration: none;
-}
-.navlink:hover { 
-    background-color: rgb(252, 245, 236);
-    color: #467257;
-}
-#navbar_logo { 
-    width: 200px;
-    height: 160px;
-    margin-top: -20px;
-    margin-bottom: -70px;
-}
-
-#indeximg { 
-    margin-top: 15px;
-}
-.navforside{
-    margin-top: 0px;
-    margin-bottom: -15px;
-    margin-left: -40px;
-    margin-right: -40px;
-    list-style:none;
-    text-align:center;
-    background-color: #467257;
-    top: 50vh;
-    width: 100%;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.397);
-}
-
-.navforside li{
-    display:inline;
-}
-
-.navforside a{
-    display:inline-block;
-    padding:40px;
-    font-size: 20px;
-    color: rgb(60, 77, 31);
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-.navforside a:hover { 
-    background-color: rgb(252, 245, 236);
-    color: rgb(60, 77, 31);
 }
 
 @media only screen and (max-width: 1026px) and (min-width: 961px){
@@ -214,6 +147,84 @@ body {
     }
 }
 
+/* Generell navbar */
+
+.nav{
+    margin: -40px;
+    margin-top: -55px;
+    list-style:none;
+    text-align:center;
+    background-color: rgb(235, 216, 199); 
+    top: 0; 
+    width: 100%;
+    margin-bottom: 20px; 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.39);
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:35px;
+    font-size: 20px;
+    color: #467257;
+    text-decoration: none;
+}
+.navlink {
+    color: gray;
+    text-decoration: none;
+}
+.navlink:hover { 
+    background-color: rgb(252, 245, 236);
+    color: #467257;
+}
+#navbar_logo { 
+    width: 200px;
+    height: 160px;
+    margin-top: -20px;
+    margin-bottom: -70px;
+}
+
+#indeximg { 
+    margin-top: 15px;
+}
+
+
+/* Navbar på forside */
+
+.navforside{
+    margin-top: 0px;
+    margin-bottom: -15px;
+    margin-left: -40px;
+    margin-right: -40px;
+    list-style:none;
+    text-align:center;
+    background-color: #467257;
+    top: 50vh;
+    width: 100%;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.397);
+}
+
+.navforside li{
+    display:inline;
+}
+
+.navforside a{
+    display:inline-block;
+    padding:40px;
+    font-size: 20px;
+    color: rgb(60, 77, 31);
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.navforside a:hover { 
+    background-color: rgb(252, 245, 236);
+    color: rgb(60, 77, 31);
+}
+
+/* Footer */
+
 .footer{
     position:absolute;
     color: white;
@@ -225,6 +236,119 @@ body {
 #aapningstider, #kontaktinformasjon {
     overflow: hidden;
 }
+
+.page-container{ /* på alle sider for at footer blir riktig på siden*/
+    position: relative;
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+
+/* Forside (uten navbar) */
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow-container {
+    height: 55vh;
+}
+
+.slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#dot-container {
+    text-align: center;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    border: solid 2px;
+}
+
+.dot:hover {
+    background-color: #717171 !important;
+}
+
+#tid {
+    text-align: center;
+    color: #467257;
+    font-size: 40px;
+}
+
+#tidunder { 
+    text-align: center;
+    color: #467257;
+    font-size: 20px;
+}
+
+#canvasdiv {
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background-color:rgb(248, 239, 227);
+    padding-bottom: 50px;
+  }
+
+  #btndiv {
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+  }
+
+  .daybtn {
+    width: 90px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: antiquewhite;
+  }
+  
+  .daybtn:hover {
+    background-color:#6da07f  !important;
+  }
+
+  #daydiv {
+    padding-top: 30px;
+    position: absolute;
+    margin: 0;
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/* Meny */
 
 #menuimg {
     margin-left: 45%;
@@ -323,6 +447,8 @@ body {
 #navmenu a:hover {
     color: rgb(136, 116, 90);
 }
+
+
 .introtekst {
     text-transform: none;
 }
@@ -352,62 +478,14 @@ body {
     color: white;
     transform: translateY(4px);
 }
-.page-container{
-    position: relative;
-    min-height: 100vh;
-    margin-top: 40px;
-}
-.slideshow-container {
-    height: 55vh;
-}
 
-.slide {
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
+/* Kampanjer */
 
-.slideshow {
-    position: relative;
-}
-
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 2;
-    border: solid 2px;
-}
-
-.dot:hover {
-    background-color: #717171 !important;
-}
-
-#dot-container {
+.kampheader {
+    color: #467257;
     text-align: center;
-    height: 15px;
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 #tilbud {
     font-size: 20px;
     margin-left: 10%;
@@ -427,6 +505,12 @@ body {
     justify-content: end;
     height: auto;
 }
+
+#bilde1, #bilde2{
+    width: 400px;
+    height: 325px;
+}
+
 .textdiv {
     margin-left: 15px;
     margin-right: 15px;
@@ -440,18 +524,13 @@ body {
     align-self: flex-start;
     text-transform: uppercase;
 }
+
 .italics {
     text-transform: none;
 }
-.kampheader {
-    color: #467257;
-    text-align: center;
-}
-#arrh1 { 
-    text-align: center;
-    font-size: 50px;
-    padding-left: 50px;
-}
+
+/* Arrangemanger */
+
 .container {
     position: relative;
     display: flex;
@@ -459,11 +538,12 @@ body {
     justify-content: center; 
     line-height: 1.4;
     margin-top: 10px;
-  }
+}
+
 .arrimg {
     min-width: 500px;
     height: 380px;
-  }
+}
 
 .text {
     height: 321px;
@@ -473,12 +553,14 @@ body {
     align-self: flex-start;
     overflow: auto;
 }
+
 .toptext { 
     font-size: 30px;
     color: #467257;
     font-weight: bold;
     margin: 0;
 }
+
 #hiddenText1, #hiddenText2, #hiddenText3 { 
     display: none;
 }
@@ -487,11 +569,20 @@ body {
     bottom: 5px;
     left: 520px;
 }
+
+/* Om oss */
+
 #container{
     height: calc(100vh - 90px);
     position: relative;
     margin: 0;
 }
+
+#textbox{
+    position: absolute;
+    z-index: 2;
+}
+
 #omoss{
     color: #467257;
     font-size: 30px;
@@ -499,10 +590,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#textbox{
-    position: absolute;
-    z-index: 2;
-}
+
 #text {
     font-size: 20px;
     color: black;
@@ -513,37 +601,7 @@ body {
     padding: 5px;
     opacity: 95%;
 }
-#cofee{
-    position: absolute;
-    max-width: 60vw;
-    height: auto;
-    max-height: calc(100vh - 90px);
-}
-.submitbutton{
-    padding-left: 10px;
-    padding-right: 10px;
-    width: auto;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 4px;
-    background-color: antiquewhite;
-}
 
-.submitbutton:hover {
-    background-color: #6da07f;
-}
-
-.submitbutton:active { 
-    background-color: #52775f;
-    color: white;
-    transform: translateY(4px);
-}
-#returndiv {
-    padding-top: 20px;
-    padding-left: 10vw;
-    color: "black";
-    font-size: 30px;
-}
 #feedback{
     padding-left: 10px;
     padding-right: 10px;
@@ -563,26 +621,22 @@ body {
     color: white;
     transform: translateY(4px);
 }
-#feedbackarea {
-    background-color: white;
-    /*max-width: 50vh;
-    max-height: 30vh; */
-    
+
+#cofee{
+    position: absolute;
+    max-width: 60vw;
+    height: auto;
+    max-height: calc(100vh - 90px);
 }
 
-#tilbakemelding{
-    display: block;
-    margin-left: auto;
-    margin-bottom: -50px;
-}
+
+/* Kontaktskjema */
+
 #feedbackdiv {
     padding-top: 20px;
     padding-left: 10vw;
     line-height: 1.5;
     color: rgb(248, 248, 248);
-}
-#name, #email, #feedbackarea {
-    width: 50vh;
 }
 
 #box { 
@@ -592,61 +646,47 @@ body {
     
 }
 
-#feedback_picture { 
-    height: 600px;
-    width: 400px; 
-    float: right;
-    position: relative;
-    z-index: 100;
-    margin-top: -400px;
-    padding-right: 350px;
-    opacity: 95%;
+#name, #email, #feedbackarea {
+    width: 50vh;
 }
 
-#tid{
-    text-align: center;
-    color: #467257;
-    font-size: 40px;
+#feedbackarea {
+    background-color: white;
 }
 
-
-#canvasdiv {
-    margin: auto;
-    position: relative;
-    width: 700px;
-    height: 600px;
-    background-color:rgb(248, 239, 227);
-    padding-bottom: 50px;
-
-  }
-  #btndiv {
-    padding-top: 20px;
-    position: absolute;
-    top: 0;
-  }
-  #daydiv {
-    padding-top: 30px;
-    position: absolute;
-    margin: 0;
-    top: 50px;
-    left: 50px;
-    width: 500px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .daybtn {
-    width: 90px;
-    height: 35px;
-    margin-left: 5px;
+.submitbutton{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 4px;
     background-color: antiquewhite;
-  }
-  .daybtn:hover {
-    background-color:#6da07f  !important;
-  }
+}
 
-  #tidunder { 
-      text-align: center;
-      color: #467257;
-      font-size: 20px;
-  }
+.submitbutton:hover {
+    background-color: #6da07f;
+}
+
+.submitbutton:active { 
+    background-color: #52775f;
+    color: white;
+    transform: translateY(4px);
+}
+
+/* Kontakskjemareturn */
+
+#returndiv {
+    padding-top: 20px;
+    padding-left: 10vw;
+    color: "black";
+    font-size: 30px;
+}
+
+#tilbakemelding{
+    display: block;
+    margin-left: auto;
+    margin-bottom: -50px;
+}
+
+
