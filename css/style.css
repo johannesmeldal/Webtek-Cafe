@@ -616,23 +616,7 @@ body {
     font-size: 40px;
 }
 
-.knapper{
-    width: 90px;
-    height: 40px;
-    margin-right: 20px;
-    background-color: antiquewhite;
 
-}
-
-.knapper:hover {
-    background-color: #6da07f;
-}
-
-.knapper:active { 
-    background-color: #52775f;
-    color: white;
-    transform: translateY(4px);
-}
 #canvasdiv {
     margin: auto;
     position: relative;
