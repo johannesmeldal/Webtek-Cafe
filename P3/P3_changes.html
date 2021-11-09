@@ -27,7 +27,8 @@
             brukeren skal
             begynne å navigere rundt på siden. I tillegg er det lagt til skygge navbaren av aestetiske grunner, og de
             hvite "dottene" som henger med
-            i slideshowet har fått border for å vises også på lyse bilder.
+            i slideshowet har fått border for å vises også på lyse bilder. Et nytt element som er lagt til på forsiden er
+            en tabell som viser hvor opptatt kafeen er til forskjellige tider på dagen.
         </p>
         <p><b>meny.html: </b>
             Navbaren er på denne siden og alle andre bortsett fra forsiden omgjort fra en helt hvit farge en beigefarge.
@@ -94,9 +95,14 @@
         <p><b>navbar.js: </b>
             Et stykke inn i kodingen lærte vi at navbaren fungerer helt fint med ren html. Denne JavaScript funksjonen
             har vi valgt
-            å bytte ut med en ny funksjon "", for å tilfredsstille kravet om 4 JavaScript-funksjoner.
+            å bytte ut med en ny funksjon "rushtider.js", for å tilfredsstille kravet om 4 JavaScript-funksjoner.
         </p>
         <h4 style="color: green">Lagt til</h4>
+        <p><b>rushtider.js: </b>
+            Denne funksjonen viser en tabell på forsiden som gir brukeren informasjon om rushtider på kafeen, altså når
+            det er mye folk tilstede. Tabellen er bygget opp som et canvas som tegner søyler basert på en liste med objekter.
+            Tabellen viser som standard dagens dato, men brukeren kan fritt velge hvilken som helst ukedag.
+        </p>
         <p><b>navbar.js og footer.js</b>
             filene inneholder html-koden til navbaren og footeren, satt inn i en 'document.write();'-funksjon. Dette er
             gjort sånn at
