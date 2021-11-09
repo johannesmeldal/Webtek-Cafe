@@ -8,7 +8,9 @@
 </head>
 
 <body>
+    <!-- La slideshowet gå helt opp i toppen og ut i kantene av siden -->
     <div class="page-container" style="margin-top: 0px;">
+        <!-- Slideshow med bilder -->
         <div class="slideshow">
             <div class="slideshow-container">
                 <img src="img/slideshow_1.jpg" class="slide" alt="Pouring milk in coffeecup">
@@ -18,6 +20,7 @@
                 <img src="img/slideshow_5.jpg" class="slide" alt="Programming">
                 <img src="img/slideshow_6.jpg" class="slide" alt="Cafe overview">
             </div>
+            <!-- Dotter for å navigere i slideshow -->
             <div id="dot-container">
                 <span class="dot" onclick="switchSlide(0)"></span>
                 <span class="dot" onclick="switchSlide(1)"></span>
@@ -27,6 +30,7 @@
                 <span class="dot" onclick="switchSlide(5)"></span>
             </div>
         </div>
+        <!-- Unik navbar til forsiden -->
         <nav>
             <ul class="navforside">
                 <li> <a href="meny.html"> MENY </a> </li>
@@ -36,8 +40,9 @@
             </ul>
         </nav>
         <br><br><br><br>
-        <h1 id="tid">Når vil du besøke oss?</h1>
-        <h2 id="tidunder"> Under ser du en oversikt over hvordan besøkstidene er på cafeen.</h2>
+        <!-- Statistikk over pågang av besøkende -->
+        <h1 id="tid">Se når vi har ledige bord</h1>
+        <h2 id="tidunder">Under kan du se en oversikt over pågangen av besøkende på cafeen</h2>
         <div id="canvasdiv">
             <canvas id="chart" width="700" height="570"></canvas>
             <div id="btndiv">
@@ -51,7 +56,9 @@
             </div>
             <div id="daydiv"></div>
         </div>
+        <!-- Bilde av kafeens logo nederst på forsiden -->
         <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe">
+        <!-- Javascript-filer med stolpediagram, slideshow og footer -->
         <script src="js/rushtider.js"></script>
         <script src="js/slideshow.js"></script>
         <script src="js/footer.js"></script>
