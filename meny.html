@@ -10,8 +10,9 @@
 <body>
     <script src="js/navbar.js"></script>
     <div class="page-container">
-
+        <!-- Bilde med teksten "ENJOY The menu" -->
         <img id="menuimg" src="img/menu.png" alt="enjoy the menu">
+        <!-- Navigeringsmeny med intern linking til de ulike overskriftene i menyen -->
         <div id="navmenu">
             <img class="punkt" src="img/punkt.png" alt="bønner">
             <a href="#drikkeheader">DRIKKER</a><br>
@@ -23,24 +24,31 @@
             <a href="#kakeheader">KAKER</a>
         </div>
         <div id="menu">
+            <!-- Informerende innledning til menyen -->
             <h2 class="menuheader" id="hovedheader">Velkommen</h2>
             <section class="menusection">
                 <p class="introtekst">For å bestille velger du antallet av hver rett du skal ha, og trykker
                     deretter på "bestill" knappen nederst på siden.
                 </p>
-            </section>
+           
+            </section> 
+            <!-- Seksjon der du velger drikkevarer -->
             <h2 class="menuheader" id="drikkeheader">Drikker</h2>
             <section class="menusection" id="drikker">
             </section>
+            <!-- Seksjon der du velger salat -->
             <h2 class="menuheader" id="salatheader">Salater</h2>
             <section class="menusection" id="salater">
             </section>
+            <!-- Seksjon der du velger snacks -->
             <h2 class="menuheader" id="snacksheader">Snacks</h2>
             <section class="menusection" id="snacks">
             </section>
+            <!-- Seksjon der du velger kaker -->
             <h2 class="menuheader" id="kakeheader">Kaker</h2>
             <section class="menusection" id="kaker">
             </section><br>
+            <!-- Knapp som submitter det du har bestilt -->
             <button class="menubutton" onclick="bestill()">Bestill</button>
         </div>
         <script src="js/footer.js"></script>
