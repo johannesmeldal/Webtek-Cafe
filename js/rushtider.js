@@ -50,7 +50,7 @@ const days = {
 }
 
 
-//Koden under er i stor grad hentet fra WebTek øving 8, og videreutviklet fra den
+//Koden under er i stor grad hentet fra WebTek øving 8, og videreutviklet med den som utgangspunkt.
 
 //Definerer konstanter
 const canvas = document.getElementById('chart');
