@@ -18,30 +18,18 @@
         <a href="https://folk.ntnu.no/augustsn/Documents/Nettside/">Link til nettstedet</a>
     </section>
     <section>
-        <h2>Changes</h2>
+        <h2>Endringer</h2>
         <h3>HTML</h3>
         <p><b>index.html: </b>
-            Navbaren på forsiden har endret farge fra hvit til grønn. Dette er for å skape en klarere skille mellom
-            navbaren, slidetshowet
-            over og logoen under. Hensikten er at navbaren skal skille seg ut og fange oppmerksomheten til brukeren når
-            brukeren skal
-            begynne å navigere rundt på siden. I tillegg er det lagt til skygge navbaren av aestetiske grunner, og de
-            hvite "dottene" som henger med
-            i slideshowet har fått border for å vises også på lyse bilder. Et nytt element som er lagt til på forsiden
-            er
-            en tabell som viser hvor opptatt kafeen er til forskjellige tider på dagen.
+            Her er det lagt til en tabell som viser hvor opptatt kafeen er til forskjellige tider på dagen. Tabellen viser
+            som standard dagens dato, men brukeren kan selv sjekke alle ukedagene ved bruk av knapper.
         </p>
         <p><b>meny.html: </b>
-            Navbaren er på denne siden og alle andre bortsett fra forsiden omgjort fra en helt hvit farge en beigefarge.
-            Navbaren er også nå mørkere enn
-            bakgrunnsfargen på siden, og det har blitt lagt til skygge også på denne tilbakemeldingen. Det har blitt
-            lagt til en seksjon over selve menyen
+            Det har blitt lagt til en seksjon over selve menyen
             med overskriften "Velkommen", i tillegg til et kort avsnitt som forteller hvordan menyen brukes.
         </p>
         <p><b>kampanjer.html: </b>
-            Denne siden er nesten helt lik som mockup-en. De samme endringene på navbaren som på meny-siden gjelder også
-            her. Teksten på kampanjene er gjort
-            litt mindre for at siden skal fungere bedre i mindre vindu.
+            Teksten på kampanjene er gjort litt mindre for at siden skal fungere bedre i mindre vindu.
         </p>
         <p><b>arrangementer.html: </b>
             Overskriften "Arrangement" er fjernet for å spare plass på siden. Bildene er flyttet helt til siden, og
@@ -74,6 +62,7 @@
             tekst som takker brukeren for tilbakemeldingen
             samt et passende bilde. Siden har også en knapp som fører tilbake til omoss.html
         </p>
+        <hr>
         <h3>JavaScript</h3>
         <p><b>slideshow.js: </b>
             I tillegg til å vise slideshowet på forsiden, gir funksjonen nå mulighet til å bla gjennom bildene.
@@ -103,14 +92,13 @@
             Denne funksjonen viser en tabell på forsiden som gir brukeren informasjon om rushtider på kafeen, altså når
             det er mye folk tilstede. Tabellen er bygget opp som et canvas som tegner søyler basert på en liste med
             objekter.
-            Tabellen viser som standard dagens dato, men brukeren kan fritt velge hvilken som helst ukedag.
         </p>
         <p><b>navbar.js og footer.js</b>
             filene inneholder html-koden til navbaren og footeren, satt inn i en 'document.write();'-funksjon. Dette er
             gjort sånn at
             html-koden til header og footer kan gjenbrukes og ikke er kodet mer enn 1 gang.
         </p>
-
+        <hr>
         <h3>CSS</h3>
         <p><b>Bakgrunnsfarge: </b> Vi valgte å bytte beigefargen til en kaldere hvitfarge. Fargen er rgb (248, 239,
             227).
@@ -124,7 +112,7 @@
             vanskeligere å lese.
             Dette løste vi med å velge hvit tekstfarge, slik at kontrastene ble større. </p>
 
-        <p><b>Body width? </b></p>
+        <p><b>Body width: </b> Den ligger på 100%, og skal til enhver tid dekke hele browserens bredde. </b></p>
 
         <p><b> Footer: </b>Som nevnt tidligere valgte vi en mørkere grønnfarge, (#467257), som er den samme vi bruker på
             navbaren på forsiden, samt tekstfargen.
@@ -143,12 +131,24 @@
             ettersom det ble estetisk finest og lettest å lese. </p>
 
         <p><b>Linker: </b>Ved at vi har lagt til kontaktskjema som en egen side, vil man ikke lenger ha tilgang til alle
-            sidene som beskrevet i P2. Dette henger med at kontaktskjemaet er en del av om oss. </p>
+            sidene som beskrevet i P2. Dette henger med at kontaktskjemaet er en del av om oss siden. </p>
 
+        </p>
+        <p>
+            - (index.html) Navbaren på forsiden har endret farge fra hvit til grønn. Dette er for å skape en klarere skille mellom
+            navbaren, slidetshowet
+            over og logoen under. Hensikten er at navbaren skal skille seg ut og fange oppmerksomheten til brukeren når
+            brukeren skal
+            begynne å navigere rundt på siden. I tillegg er det lagt til skygge navbaren av aestetiske grunner, og de
+            hvite "dottene" som henger med
+            i slideshowet har fått border for å vises også på lyse bilder.</br>
+            - (meny.html) Navbaren er på denne siden og alle andre bortsett fra forsiden omgjort fra en helt hvit farge en beigefarge.
+            Navbaren er også nå mørkere enn
+            bakgrunnsfargen på siden, og det har blitt lagt til skygge også på denne tilbakemeldingen.
         </p>
     </section>
     <section>
-        <h2>How each of the team members fulfilled their minimum requirements</h2>
+        <h2>Hvordan ble minstekravene oppfylt?</h2>
         <p>
             Elin fylte minimumskravet sitt ved å lage onclick-funksjoner i arrangementer.html. Siden funker da slik at
             bruker kan hente mer informasjon om arrangementer på webtek cafe ved å trykke på “les mer” knappen.
@@ -166,13 +166,10 @@
             <br><br>
             Anine lagde slideshowet til index.html, og lagde navbar.js sammen med Elin. Slidehowet går på tid, og viser
             til forskjellige bilder fra kafeen. Navbaren er lagt inn på alle sider og navigerer bruker til ønsket side.
-
         </p>
     </section>
     <section>
-        <h2>Explicitly state (since it may have changed since the design document), which person
-            worked on which files including CSS and JavaScript files, and who produced the
-            artwork (banner and button design, etc.).</h2>
+        <h2>Oppdatert organiseringsoversikt og arbeidsfordeling</h2>
         <p>
         <h3>Organisering</h3>
         <p>Liste over filer og mapper:</p>
@@ -220,7 +217,6 @@
                     <li>style.css</li>
                 </ul>
             </li>
-
             <h3> Arbeidsfordelingen </h3>
 
             <table>
@@ -257,12 +253,12 @@
                 <tr>
                     <td>Kontaktskjema.html</td>
                     <td>Skjema for tilbakemelding</td>
-                    <td>.</td>
+                    <td>Johannes</td>
                 </tr>
                 <tr>
                     <td>Kontaktskjemareturn.html</td>
                     <td>Returskjema for tilbakemelding</td>
-                    <td>.</td>
+                    <td>Martine</td>
                 </tr>
                 <tr>
                     <td>Slideshow.js</td>
@@ -283,6 +279,11 @@
                     <td>Footer.js</td>
                     <td>Footeren som er gjennomgående på alle sidene </td>
                     <td>Martine</td>
+                </tr>
+                <tr>
+                    <td>Rushtider.js</td>
+                    <td>Canvas oppsettet på forsiden som sier noe om rushtidene</td>
+                    <td>Johannes</td>
                 </tr>
                 <tr>
                     <td>Arrangementer.js</td>
@@ -308,7 +309,7 @@
             </p>
     </section>
     <section>
-        <h2>Indicate how the modularity requirement was handled</h2>
+        <h2>Modularitet</h2>
         <p>
             Nettsiden har en generell styling som er felles for alle sidene i form av farger, font og liknende. For å
             oppnå modularitet er disse felles styling-elementene derfor samlet i filen style.css som er lastet inn på

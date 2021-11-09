@@ -6,10 +6,10 @@
     <title>Arrangementer | Webtek Kafe</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <script src="js/navbar.js"></script>
     <div class="page-container">
+        <!-- Første arrangementet, består av bilde, tekst og en knapp som kan vise mer eller mindre tekst -->
         <div class="container">
             <img src=img/js.png alt="Javascript logo" id="js" class="arrimg" />
             <div class="text">
@@ -21,13 +21,14 @@
                     Vi har erfarne fagfolk som er der for å hjelpe deg til å bli flinkere, og kan hjelpe med oppgaver.
                     Her kan man også jobbe med ulike skoleoppgaver
                 </p>
-                <p id="hiddenText1">
+                <p id="hiddenText1"> <!-- Teksten som kan vises/skjules ved hjelp av knappen under. Samme prinsipp på de andre "hiddenText" elementene under. -->
                     Dato: 2. november <br> Tidspunkt: 16:00 - 20:00
                 </p>
 
             </div>
-            <button class="menubutton" id="lesmer1btn" onclick="hvisTekst1()">Les mer</button>
+            <button class="menubutton" id="lesmer1btn" onclick="hvisTekst1()">Les mer</button> <!-- knappen som aktiverer les mer/mindre teksten. Samme prinsipp på knappene under -->
         </div>
+        <!-- Arrangement 2 -->
         <div class="container">
             <img src=img/arrangement1.jpg alt="programming" id="prog" class="arrimg" />
             <div class="text">
@@ -43,7 +44,7 @@
             <button class="menubutton" id="lesmer2btn" onclick="hvisTekst2()">Les mer</button>
         </div>
         <br>
-
+        <!-- Arrangement 3 -->
         <div class="container">
             <img src=img/arrangement_jul.jpg alt="Christmas" id="christmas" class="arrimg" />
             <div class="text">
