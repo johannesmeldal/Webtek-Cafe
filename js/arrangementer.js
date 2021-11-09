@@ -1,7 +1,9 @@
-var one = true;
-var two = true;
-var three = true;
+//Boolean-variabler som bestemmer om hele teksten skal vises eller ikke
+let one = true;
+let two = true;
+let three = true;
 
+//Funksjon som viser/skjuler ekstra tekst på hvert arrangement, funksjonen aktiveres av en knapp.
 function hvisTekst1() {
     if (one) {
         document.getElementById("hiddenText1").style.display = "contents";
@@ -14,6 +16,7 @@ function hvisTekst1() {
     }
 }
 
+//Identisk funksjon som den over.
 function hvisTekst2() {
     if (two) {
         document.getElementById("hiddenText2").style.display = "contents";
@@ -26,6 +29,7 @@ function hvisTekst2() {
     }
 }
 
+//Identisk funksjon som den over.
 function hvisTekst3() {
     if (three) {
         document.getElementById("hiddenText3").style.display = "contents";

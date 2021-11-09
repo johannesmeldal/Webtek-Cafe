@@ -141,8 +141,6 @@ function drawGraph(Array) {
     drawText('1 - Rolig', 565, 250);
 }
 
-
-
 drawGraph(days[day]);
 document.getElementById("daydiv").innerHTML = day;
 document.getElementById(String(d.getDay())).style.backgroundColor = 'lightgrey';
