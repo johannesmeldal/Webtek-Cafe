@@ -611,9 +611,9 @@ body {
 }
 
 #tid{
-    margin-top: 0;
     text-align: center;
     color: #467257;
+    font-size: 40px;
 }
 
 .knapper{
@@ -638,9 +638,9 @@ body {
     position: relative;
     width: 700px;
     height: 600px;
-    background-color: white;
-    border: solid black;
-    border-radius: 25px;
+    background-color:rgb(248, 239, 227);
+    padding-bottom: 50px;
+
   }
   #btndiv {
     padding-top: 20px;
@@ -648,21 +648,28 @@ body {
     top: 0;
   }
   #daydiv {
-    padding-top: 10px;
+    padding-top: 30px;
     position: absolute;
     margin: 0;
     top: 50px;
     left: 50px;
     width: 500px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .daybtn {
     width: 90px;
     height: 35px;
     margin-left: 5px;
-    background-color: white;
+    background-color: antiquewhite;
   }
   .daybtn:hover {
-    background-color: lightgray !important;
+    background-color:#6da07f  !important;
+  }
+
+  #tidunder { 
+      text-align: center;
+      color: #467257;
+      font-size: 20px;
   }

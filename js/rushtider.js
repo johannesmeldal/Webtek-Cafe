@@ -126,9 +126,9 @@ function drawGraph(Array) {
 
         let graphColor;
         if (Array[Obj] == 3) {
-            graphColor = 'red'
+            graphColor = '#A85055'
         } else {
-            graphColor = 'blue'
+            graphColor = '#95C391'
         }
         drawRectWithText(x, hCanvas + margin, widthBar, -height, graphColor, Obj)
         
