@@ -545,7 +545,7 @@ og slideshowet helt opp i toppen av siden */
     align-items: center; 
     justify-content: center; 
     line-height: 1.4;
-    margin-top: 10px;
+    margin: 10px 1em 0 1em;
 }
 
 .arrimg {
