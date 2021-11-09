@@ -611,7 +611,7 @@ body {
 }
 
 #tid{
-    height: 200px;
+    margin-top: 0;
     text-align: center;
     color: #467257;
 }
@@ -633,3 +633,36 @@ body {
     color: white;
     transform: translateY(4px);
 }
+#canvasdiv {
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border: solid black;
+    border-radius: 25px;
+  }
+  #btndiv {
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+  }
+  #daydiv {
+    padding-top: 10px;
+    position: absolute;
+    margin: 0;
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .daybtn {
+    width: 90px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: white;
+  }
+  .daybtn:hover {
+    background-color: lightgray !important;
+  }

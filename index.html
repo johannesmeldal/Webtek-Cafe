@@ -9,12 +9,12 @@
     <div class="page-container" style="margin-top: 0px;">
         <div class="slideshow">
             <div class="slideshow-container">
-                <img src="img/slideshow_6.jpg" class="slide" alt="Pouring milk in coffeecup">
-                <img src="img/slideshow_1.jpg" class="slide" alt="Cafe table">
-                <img src="img/slideshow_2.jpg" class="slide" alt="Programming in cafe">
+                <img src="img/slideshow_1.jpg" class="slide" alt="Pouring milk in coffeecup">
+                <img src="img/slideshow_2.jpg" class="slide" alt="Cafe table">
+                <img src="img/slideshow_3.jpg" class="slide" alt="Programming in cafe">
                 <img src="img/slideshow_4.jpg" class="slide" alt="Coffeecups">
-                <img src="img/slideshow_13.jpg" class="slide" alt="Programming">
-                <img src="img/slideshow_5.jpg" class="slide" alt="Cafe overview">
+                <img src="img/slideshow_5.jpg" class="slide" alt="Programming">
+                <img src="img/slideshow_6.jpg" class="slide" alt="Cafe overview">
             </div>
             <div id="dot-container">
                 <span class="dot" onclick="switchSlide(0)"></span>
@@ -34,17 +34,23 @@
             </ul>
         </nav>
         <br><br><br><br>
-        <div id="tid">
-            <h2>Når vil du besøke oss?</h2>
-            <button id="mandag" class="knapper">Mandag</button>
-            <button id="tirsdag" class="knapper">Tirsdag</button>
-            <button id="onsdag" class="knapper">Onsdag</button>
-            <button id="torsdag" class="knapper">Torsdag</button>
-            <button id="fredag" class="knapper">Fredag</button>
-            <button id="lørdag" class="knapper">Lørdag</button>
-            <button id="søndag" class="knapper">Søndag</button>
-        </div>
-        <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe"/>
+        <h2 id="tid">Når vil du besøke oss?</h2>
+            <div id="canvasdiv">
+                
+                <canvas id="chart" width="700" height="570"></canvas>
+                <div id="btndiv">
+                  <button id="1" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Mandag</button>
+                  <button id="2" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Tirsdag</button>
+                  <button id="3" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Onsdag</button>
+                  <button id="4" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Torsdag</button>
+                  <button id="5" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Fredag</button>
+                  <button id="6" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Lørdag</button>
+                  <button id="0" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Søndag</button>
+                </div>
+                <div id="daydiv"></div>
+              </div>
+        <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe">
+        <script src="rushtider.js"></script>
         <script src="js/slideshow.js"></script>
         <script src="js/footer.js"></script>
     </div>
