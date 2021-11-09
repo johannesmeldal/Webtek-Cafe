@@ -39,24 +39,25 @@
             </ul>
         </nav>
         <br><br><br><br>
-        <!-- Statistikk over pågang av besøkende -->
-        <h1 id="tid">Se når vi har ledige bord</h1>
-        <h2 id="tidunder">Under kan du se en oversikt over pågangen av besøkende på cafeen</h2>
-        <div id="canvasdiv">
-            <canvas id="chart" width="700" height="570"></canvas>
-            <div id="btndiv">
-                <button id="1" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Mandag</button>
-                <button id="2" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Tirsdag</button>
-                <button id="3" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Onsdag</button>
-                <button id="4" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Torsdag</button>
-                <button id="5" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Fredag</button>
-                <button id="6" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Lørdag</button>
-                <button id="0" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Søndag</button>
-            </div>
-            <div id="daydiv"></div>
-        </div>
+       
         <!-- Bilde av kafeens logo nederst på forsiden -->
         <img src="img/forside_logo-removebg-preview.png" id="logo" alt="Logo Webtek Cafe">
+         <!-- Statistikk over pågang av besøkende -->
+         <h1 id="tid">Når skal du besøke oss?</h1>
+         <h2 id="tidunder">Under kan du se en oversikt over pågangen av besøkende på cafeen</h2>
+         <div id="canvasdiv">
+             <canvas id="chart" width="700" height="570"></canvas>
+             <div id="btndiv">
+                 <button id="1" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Mandag</button>
+                 <button id="2" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Tirsdag</button>
+                 <button id="3" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Onsdag</button>
+                 <button id="4" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Torsdag</button>
+                 <button id="5" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Fredag</button>
+                 <button id="6" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Lørdag</button>
+                 <button id="0" class="daybtn" onclick="drawGraph(days[this.innerHTML])">Søndag</button>
+             </div>
+             <div id="daydiv"></div>
+         </div>
         <!-- Javascript-filer med stolpediagram, slideshow og footer -->
         <script src="js/rushtider.js"></script>
         <script src="js/slideshow.js"></script>
