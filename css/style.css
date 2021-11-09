@@ -421,7 +421,6 @@ body {
     width: 80%;
     height: auto;
     color: black;
-    border-image: solid;
 }
 #tilbud_en {
     display: flex;
