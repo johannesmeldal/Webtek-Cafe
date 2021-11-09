@@ -4,20 +4,45 @@
 <head>
   <title>Tax forms: Bar chart with lines</title>
   <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-  body {
-    margin: 0;
+
+.daybtn {
+    width: 90px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: white;
   }
-  #canvasdiv {
-    margin: 0;
+
+.daybtn:hover {
+    background-color: #6da07f;
+}
+
+.daybtn:active { 
+    background-color: #52775f;
+    color: white;
+    transform: translateY(4px);
+}
+
+
+#canvasdiv {
     position: relative;
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border: solid black;
+    border-radius: 25px;
+    margin: 0
+
   }
   #btndiv {
+    padding-top: 20px;
     position: absolute;
     top: 0;
   }
   #daydiv {
+    padding-top: 10px;
     position: absolute;
     margin: 0;
     top: 50px;
@@ -26,16 +51,8 @@
     text-align: center;
     font-size: 40px;
   }
-  .daybtn {
-    width: 70px;
-    height: 35px;
-    margin-left: 5px;
-    background-color: white;
-  }
-  .daybtn:hover {
-    background-color: #6da07f;
-  }
 
+  
 </style>
 <body>
   <div id="canvasdiv">
