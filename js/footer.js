@@ -1,3 +1,4 @@
+//Enkel funksjon som skyter inn footeren der filen linkes.
 document.write(`
 <div class="footer">
         <div id="aapningstider">
