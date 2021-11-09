@@ -310,7 +310,6 @@ function bestill() {
     if (sum == 0) {
         alert("Vennligst bestill minst 1 ting fra menyen!");
     } else {
-        console.log(kvittering);
         var section1 = document.createElement("section");
         section1.className = "menusection";
         section1.innerHTML = `<b class="introtekst">Takk for din bestilling!</br></br>Vedlagt finner du kvitteringen:</b></br></br>`;

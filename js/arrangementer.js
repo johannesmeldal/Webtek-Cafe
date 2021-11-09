@@ -12,7 +12,6 @@ function hvisTekst1() {
         document.getElementById("lesmer1btn").innerHTML = "Les mer";
         one = true;
     }
-    
 }
 
 function hvisTekst2() {
@@ -25,7 +24,6 @@ function hvisTekst2() {
         document.getElementById("lesmer2btn").innerHTML = "Les mer";
         two = true;
     }
-    
 }
 
 function hvisTekst3() {
@@ -38,5 +36,4 @@ function hvisTekst3() {
         document.getElementById("lesmer3btn").innerHTML = "Les mer";
         three = true;
     }
-    
 }
