@@ -153,9 +153,9 @@ function drawGraph(Array) {
         t++;
     }
     context.font = "26px Nunito"
-    drawText('3 - Mye aktivitet', 565, 170);
-    drawText('2 - Middels aktivitet', 565, 210);
-    drawText('1 - Lite aktivitet', 565, 250);
+    drawText('3 - Mange besøkende', 565, 170);
+    drawText('2 - Noen besøkende', 565, 210);
+    drawText('1 - Få besøkende', 565, 250);
 }
 
 //Når siden lastes vil den få tak i dagens dato og tegne grafen for dagens ukedag, samt markere knappen og endre overskriften
