@@ -1,5 +1,4 @@
 body {
-    
     background-color: rgb(248, 239, 227);
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -15,11 +14,9 @@ body {
     margin-bottom: 20px; 
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.39);
 }
-
 .nav li{
     display:inline;
 }
-
 .nav a{
     display:inline-block;
     padding:35px;
@@ -27,17 +24,14 @@ body {
     color: #467257;
     text-decoration: none;
 }
-
 .navlink {
     color: gray;
     text-decoration: none;
 }
-
 .navlink:hover { 
     background-color: rgb(252, 245, 236);
     color: #467257;
 }
-
 #navbar_logo { 
     width: 200px;
     height: 160px;
