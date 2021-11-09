@@ -136,7 +136,7 @@ function drawGraph(Array) {
         t++;
     }
     context.font = "26px Nunito"
-    drawText('3 - Opptatt', 565, 170);
+    drawText('3 - Fullt', 565, 170);
     drawText('2 - Middels', 565, 210);
     drawText('1 - Rolig', 565, 250);
 }
