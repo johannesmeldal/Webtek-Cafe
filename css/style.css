@@ -237,15 +237,22 @@ body {
     overflow: hidden;
 }
 
-.page-container{ /* på alle sider for at footer blir riktig på siden*/
+/* på alle sider (untatt forsiden) for at footer blir riktig på siden*/
+.page-container{ 
     position: relative;
     min-height: 100vh;
     margin-top: 40px;
 }
 
+/* på forsiden for å plassere footer på bunnen av siden 
+og slideshowet helt opp i toppen av siden */
+.frontpage-container{ 
+    position: relative;
+    min-height: 100vh;
+    margin-top: 0px;
+}
 
 /* Forside (uten navbar) */
-
 .slideshow {
     position: relative;
 }
