@@ -18,18 +18,23 @@
         <a href="https://folk.ntnu.no/augustsn/Documents/Nettside/">Link til nettstedet</a>
     </section>
     <section>
-        <h2>Endringer</h2> <!-- Generelt mer tekst i denne seksjonen -->
+        <h2>Endringer</h2> <!-- Generelt mer tekst i denne seksjonen, nevne endring av navigasjonsstrukturen -->
         <h3>HTML</h3>
         <p><b>index.html: </b>
             Her er det lagt til en tabell som viser hvor opptatt kafeen er til forskjellige tider på dagen. Tabellen viser
             som standard gjeldende ukedag, men brukeren kan selv sjekke alle ukedagene ved bruk av knapper.
         </p>
         <p><b>meny.html: </b>
-            Det har blitt lagt til en seksjon over selve menyen
-            med overskriften "Velkommen", i tillegg til et kort avsnitt som forteller hvordan menyen brukes.
+            Meny.html har hatt lite endringer i forhold til mock-upsene våre. Til forskjell fra vår orginale plan, 
+            har det blitt lagt til en seksjon over selve menyen med overskriften "Velkommen", i tillegg til et kort avsnitt som forteller hvordan menyen brukes.
+            Vi valgte også å fjerne de planlagte bildene av maten og drikken, da vi opplevde at siden ble mer strukturert og oversiktelig
+            uten disse. Videre hadde vi planlagt at meny.html skulle føre videre til bestilling.html,
+            men vi innså at dette var en unødvendig side og valgte dermed å fjerne denne. 
         </p>
         <p><b>kampanjer.html: </b>
-            Teksten på kampanjene er gjort litt mindre for at siden skal fungere bedre i mindre vindu.
+            Denne siden er nær identisk med mockupen vi lagde til P2. Det er blitt gjort minimale endringer. Den første endringen 
+            er at teksten på kampanjene er gjort litt mindre for at siden skal fungere bedre i mindre vindu. Videre har vi lagt til en 
+            JavaScript funksjon som gjør at brukeren kan komme rett til menyen ved å trykke på bildene. 
         </p>
         <p><b>arrangementer.html: </b>
             Overskriften "Arrangement" er fjernet for å spare plass på siden. Bildene er flyttet helt til siden, og
@@ -41,7 +46,7 @@
             hvor mye vedkommende vil lese.
         </p>
         <p><b>omoss.html: </b>
-            Tekstfeltet som inneholder kontaktinformasjon er blitt fjernet, fordi dette ligger i footeren. Det har blitt
+            Tekstfeltet som inneholder kontaktinformasjon er blitt fjernet, fordi samme informasjon ligger i footeren. Det har blitt
             laget en knapp som tar brukeren til kontaktskjemaet, som er laget for å gi tilbakemelding til kafeen. I tillegg er det blitt lagt til opasitet i det hvite
             tekstfeltet som dekker bildet, slik at den
             delen av bildet som er bak tekstboksen kan sees delvis. Dette er gjort for å skape flyt og få helheten på
@@ -49,13 +54,14 @@
         </p>
         <h4 style="color: red">Fjernet</h4>
         <p><b>bestilling.html: </b>
-            Siden er ikke nødvendig, da både visning av menyen og bestillingen foregår på meny.html.
+            Vi valgte å fjerne denne siden, da den er ikke nødvendig. I vår nåværende struktur foregår både visningen av menyen og 
+            bestillingen på meny.html. 
         </p>
         <h4 style="color: green">Lagt til</h4>
         <p><b>kontaktskjema.html: </b>
             Brukeren vil nå denne siden ved å trykke på "Gi oss tilbakemelding"-knappen på 'omoss.html'. Siden
             Inneholder et kontaktskjema som brukeren kan fylle ut og sende inn. Dette bidrar til at kafeen kan få tilbakemeldinger
-            og se hva de selv kan endre på for å bedre kundefornøydheten, samt få flere kunder til Webtek Cafe. 
+            og se hva de selv kan endre på for å bedre kundefornøydheten, og få flere kunder til Webtek Cafe. 
         </p>
         <p><b>kontaktskjemareturn.html: </b>
             Brukeren blir sendt til denne siden når tilbakemeldingsskjemaet er fylt ut og sendt inn. Siden viser en
@@ -137,7 +143,7 @@
             sidene som beskrevet i P2. Dette henger med at kontaktskjemaet er en del av om oss siden. </p>
     </section>
     <section>
-        <h2>Hvordan ble minstekravene oppfylt?</h2>
+        <h2>Hvordan ble minstekravene oppfylt?</h2> <!-- utdype mer? -->
         <p>
             Elin fylte minimumskravet sitt ved å lage onclick-funksjoner i arrangementer.html og arragnmenter.js, og designet hele siden. 
             Siden funker da slik at bruker kan hente mer informasjon om arrangementer på webtek cafe ved å trykke på “les mer” knappen. 
@@ -177,6 +183,7 @@
                 <ul>
                     <li>arrangementer_jul.png</li>
                     <li>arrangement1.png</li>
+                    <li>bønner.png</li>
                     <li>forside_logo-removebg-preview.png</li>
                     <li>js.png</li>
                     <li>logo wc.png</li>
@@ -305,7 +312,7 @@
             Nettsiden har en generell styling som er felles for alle sidene i form av farger, font og liknende. For å
             oppnå modularitet er disse felles styling-elementene derfor samlet i filen style.css som er lastet inn på
             alle sidene. Alle medlemmene av gruppa samarbeidet om å velge ut farger, font og annen generell styling i
-            henhold til klientens ønsker. Alle bidro dermed til å sette sammen styling.css. <br><br>
+            henhold til klientens ønsker. Alle bidro dermed til å sette sammen styling.css. <br><br> <!-- hmmm -->
 
             Felles for alle sidene er også navigasjonsbar øverst og footer nederst på siden (med unntak av forsiden som
             har en noe annerledes navigasjonsbar enn de resterende sidene). For å oppnå modularitet her, er koden for
