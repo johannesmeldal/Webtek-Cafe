@@ -16,8 +16,12 @@ body {
         width: 60%;
     }
     .navforside a{
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 60%;
+    }
+    .navforside a{
+        display: block;
     }
     #text {
         min-height: 60vh;
@@ -77,9 +81,13 @@ body {
         padding-bottom: 10px;
         width: 60%;
     }
+    .navforside li{
+        display: block;
+    }
     .navforside a{
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 60%;
     }
     #container {
         padding-bottom: 574px;
@@ -97,6 +105,9 @@ body {
     #text {
         overflow-y: scroll;
         height: 60vh;
+    }
+    #tid, #tidunder, #canvasdiv {
+        display: none
     }
 }
 
@@ -204,14 +215,13 @@ body {
     width: 100%;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.397);
 }
-
 .navforside li{
     display:inline;
 }
 
 .navforside a{
     display:inline-block;
-    padding:40px;
+    padding:35px;
     font-size: 20px;
     color: rgb(60, 77, 31);
     text-decoration: none;
