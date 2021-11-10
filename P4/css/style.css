@@ -67,3 +67,10 @@ table {
     margin-right: 10%;
     margin-bottom: 5%;
 }
+
+img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
