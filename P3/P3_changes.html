@@ -24,11 +24,11 @@
         <a href="https://folk.ntnu.no/augustsn/Documents/Nettside/">Link til nettstedet</a>
     </section>
     <section>
-        <h2>Endringer</h2>
+        <h2>Endringer</h2> <!-- Generelt mer tekst i denne seksjonen -->
         <h3>HTML</h3>
         <p><b>index.html: </b>
             Her er det lagt til en tabell som viser hvor opptatt kafeen er til forskjellige tider på dagen. Tabellen viser
-            som standard dagens dato, men brukeren kan selv sjekke alle ukedagene ved bruk av knapper.
+            som standard gjeldende ukedag, men brukeren kan selv sjekke alle ukedagene ved bruk av knapper.
         </p>
         <p><b>meny.html: </b>
             Det har blitt lagt til en seksjon over selve menyen
@@ -43,12 +43,12 @@
             Dette er gjort for at sidene skal se mest mulig lik ut også på smalere oppløsninger. I tillegg er det lagt
             til "Les mer"-knapper på hvert arrangementer
             for at brukeren har mulighet til å få all infomarsjon om de arrangementene som virker spennende, uten at
-            siden er overfylt av tekst ved første øyenkast.
+            siden er overfylt av tekst ved første øyenkast. Dette funker også når siden blir mindre, da brukeren kan selv bestemme 
+            hvor mye vedkommende vil lese.
         </p>
         <p><b>omoss.html: </b>
             Tekstfeltet som inneholder kontaktinformasjon er blitt fjernet, fordi dette ligger i footeren. Det har blitt
-            laget en knapp som tar siden til et
-            kontaktskjema for å gi tilbakemelding til kafeen. I tillegg er det blitt lagt til opasitet i det hvite
+            laget en knapp som tar brukeren til kontaktskjemaet, som er laget for å gi tilbakemelding til kafeen. I tillegg er det blitt lagt til opasitet i det hvite
             tekstfeltet som dekker bildet, slik at den
             delen av bildet som er bak tekstboksen kan sees delvis. Dette er gjort for å skape flyt og få helheten på
             siden til å se bedre ut.
@@ -59,9 +59,9 @@
         </p>
         <h4 style="color: green">Lagt til</h4>
         <p><b>kontaktskjema.html: </b>
-            Denne html-siden når brukeren ved å trykke på "Gi oss tilbakemelding"-knappen på 'omoss.html'. Siden
-            Inneholder et kontaktskjema som brukeren
-            kan fylle ut og sende inn.
+            Brukeren vil nå denne siden ved å trykke på "Gi oss tilbakemelding"-knappen på 'omoss.html'. Siden
+            Inneholder et kontaktskjema som brukeren kan fylle ut og sende inn. Dette bidrar til at kafeen kan få tilbakemeldinger
+            og se hva de selv kan endre på for å bedre kundefornøydheten, samt få flere kunder til Webtek Cafe. 
         </p>
         <p><b>kontaktskjemareturn.html: </b>
             Brukeren blir sendt til denne siden når tilbakemeldingsskjemaet er fylt ut og sendt inn. Siden viser en
@@ -78,20 +78,20 @@
         <p><b>meny.js: </b>
             Funksjonen er i stor grad som planlagt. Det er lagt inn funksjonalitet for å unngå at kundene bestiller
             under 0
-            eller over 6 av en vare i menyen.
+            eller over 6 av en vare i menyen. <!-- kanskje skrive hvorfor?-->
         <p>
         <p><b>bestilling.js: </b>
-            Funksjonen fungerer akuratt som planlagt. For å gjøre det mere lettvint, ligger all koden i meny.js. Dette
+            Funksjonen fungerer akkurat som planlagt. For å gjøre det mere lettvint, ligger all koden i meny.js. Dette
             er fordi
-            funksjonen bygger på de samme variablene som meny-funksjonen. Likevell er begge funksjonene såpass
+            funksjonen bygger på de samme variablene som meny-funksjonen. Likevel er begge funksjonene såpass
             omfattende, at selv om
-            begge ligger i samme fil, regner vi de som 2 forskjellige funksjoner.
+            begge ligger i samme fil, regner vi de som 2 forskjellige funksjoner. <!-- kanskje ikke skrive det?-->
         </p>
         <h4 style="color: red">Fjernet</h4>
         <p><b>navbar.js: </b>
             Et stykke inn i kodingen lærte vi at navbaren fungerer helt fint med ren html. Denne JavaScript funksjonen
             har vi valgt
-            å bytte ut med en ny funksjon "rushtider.js", for å tilfredsstille kravet om 4 JavaScript-funksjoner.
+            å bytte ut med en ny funksjon "rushtider.js".
         </p>
         <h4 style="color: green">Lagt til</h4>
         <p><b>rushtider.js: </b>
@@ -105,8 +105,8 @@
             html-koden til header og footer kan gjenbrukes og ikke er kodet mer enn 1 gang.
         </p>
         <p><b>arrangementer.js: </b>
-        Denne funksjonen åpner opp for at brukeren kan lese mer om arrangementene. Dette er spesielt når siden blir mindre og man kan
-        scrolle gjennom hvert arrangement.</p> 
+            Denne funksjonen åpner opp for at brukeren kan lese mer om arrangementene. Dette er spesielt når siden blir mindre og man kan
+            scrolle gjennom hvert arrangement.</p> 
         <hr>
         <h3>CSS</h3>
         <p><b>Bakgrunnsfarge: </b> Vi valgte å bytte beigefargen til en kaldere hvitfarge. Fargen er rgb (248, 239,
