@@ -24,7 +24,7 @@
         <a href="https://folk.ntnu.no/augustsn/Documents/Nettside/">Link til nettstedet</a>
     </section>
     <section>
-        <h2>Endringer</h2> <!-- Generelt mer tekst i denne seksjonen, nevne endring av navigasjonsstrukturen -->
+        <h2>Endringer</h2> 
         <h3>HTML</h3>
         <p> I utgangspunktet skulle nettsiden bestå av 6 sider, men ved senere endret hensikt
             på om oss siden, ble det totalt 7 sider. Ved siden av dette, gjorde vi også mange
@@ -61,11 +61,11 @@
             Knappene funker også når siden blir mindre, men brukern må bla gjennom teksten først for å se de. 
         </p>
         <p><b>omoss.html: </b>
-            Tekstfeltet som inneholder kontaktinformasjon er blitt fjernet, fordi samme informasjon ligger i footeren. Det har blitt
-            laget en knapp som tar brukeren til kontaktskjemaet, som er laget for å gi tilbakemelding til kafeen. I tillegg er det blitt lagt til opasitet i det hvite
-            tekstfeltet som dekker bildet, slik at den
-            delen av bildet som er bak tekstboksen kan sees delvis. Dette er gjort for å skape flyt og få helheten på
-            siden til å se bedre ut.
+            Tekstfeltet som inneholder kontaktinformasjon er blitt fjernet, fordi den samme informasjon ligger i footeren som er inkludert
+            på hver enkelt side. Det har i tillegg blitt laget en knapp som tar brukeren til kontaktskjemaet, som er laget for å gi 
+            tilbakemelding til kafeen. Videre er det blitt lagt til opasitet i det hvite tekstfeltet som dekker bildet, slik at den
+            delen av bildet som er bak tekstboksen kun kan sees delvis. Dette er gjort for å skape flyt og dybde, samt bidrar til at siden som en 
+            helhet ser bedre ut.
         </p>
         <h4 style="color: red">Fjernet</h4>
         <p><b>bestilling.html: </b>
@@ -79,9 +79,10 @@
             og se hva de selv kan endre på for å bedre kundefornøydheten, og få flere kunder til Webtek Cafe. 
         </p>
         <p><b>kontaktskjemareturn.html: </b>
-            Brukeren blir sendt til denne siden når tilbakemeldingsskjemaet er fylt ut og sendt inn. Siden viser en
-            tekst som takker brukeren for tilbakemeldingen
-            samt et passende bilde. Siden har også en knapp som fører tilbake til omoss.html
+            Brukeren blir sendt til denne siden når tilbakemeldingsskjemaet er fylt ut, og vedkommende trykker send inn. 
+            Siden er lagt til for at brukeren skal få tydelig beskjed, og ikke være i tvil, om at tilbakemeldingen deres er sendt inn. 
+            Siden er enkelt strukturert med en tekst som takker for innsendingen, samt et bilde. Vi har også lagt til et 
+            har også en knapp som fører brukeren tilbake til omoss.html. 
         </p>
         <hr>
         <h3>JavaScript</h3>
@@ -92,8 +93,9 @@
         </p>
         <p><b>meny.js: </b>
             Funksjonen er i stor grad som planlagt. Det er lagt inn funksjonalitet for å unngå at kundene bestiller
-            under 0
-            eller over 6 av en vare i menyen. <!-- kanskje skrive hvorfor?-->
+            under 0 eller over 6 av en vare i menyen. Denne funksjonen er laget etter ønske fra kunden, ettersom de ikke
+            har mange ansatte. 
+            <!-- kanskje skrive hvorfor?-->
         <p>
         <p><b>bestilling.js: </b>
             Funksjonen fungerer akkurat som planlagt. For å gjøre det mere lettvint, ligger all koden i meny.js. Dette
@@ -327,7 +329,7 @@
             Nettsiden har en generell styling som er felles for alle sidene i form av farger, font og liknende. For å
             oppnå modularitet er disse felles styling-elementene derfor samlet i filen style.css som er lastet inn på
             alle sidene. Alle medlemmene av gruppa samarbeidet om å velge ut farger, font og annen generell styling i
-            henhold til klientens ønsker. Alle bidro dermed til å sette sammen styling.css. <br><br> <!-- hmmm -->
+            henhold til klientens ønsker. Alle bidro dermed til å sette sammen styling.css. <br><br> 
 
             Felles for alle sidene er også navigasjonsbar øverst og footer nederst på siden (med unntak av forsiden som
             har en noe annerledes navigasjonsbar enn de resterende sidene). For å oppnå modularitet her, er koden for
