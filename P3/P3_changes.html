@@ -25,11 +25,11 @@
     </section>
     <section>
         <h2>Endringer</h2> <!-- Generelt mer tekst i denne seksjonen, nevne endring av navigasjonsstrukturen -->
-        <h3>HTML</h3>
         <p> I utgangspunktet skulle nettsiden bestå av 6 sider, men ved senere endret hensikt
             på om oss siden, ble det totalt 7 sider. Ved siden av dette, gjorde vi også mange
             andre endringer innenfor html, js og css. Under er listet opp en oversikt over dette. 
         </p>
+        <h3>HTML</h3>
         <p><b>index.html: </b>
             Forsiden er i utgangspunktet veldig lik orginal "mockup", men det har blitt gjort en viktig endring.
             Det er blitt lagt til en tabell som viser hvor mange besøkende det vanligvis er i kafeen til forskjellige 
@@ -70,13 +70,16 @@
         <h4 style="color: red">Fjernet</h4>
         <p><b>bestilling.html: </b>
             Vi valgte å fjerne denne siden, da den er ikke nødvendig. I vår nåværende struktur foregår både visningen av menyen og 
-            bestillingen på meny.html. 
+            bestillingen på meny.html. Informasjon av meny og bestilling kan med denne endringer skje på samme html side. 
+            Dette har vi valgt å gjøre fordi det er mer brukervennlig, og kunden trenger ikke å besøke to sider for å klare å bestille mat. 
+            Man kan forklare endringen ved å si at man har slått sammen bestilling.html i meny.html
         </p>
         <h4 style="color: green">Lagt til</h4>
         <p><b>kontaktskjema.html: </b>
             Brukeren vil nå denne siden ved å trykke på "Gi oss tilbakemelding"-knappen på 'omoss.html'. Siden
-            Inneholder et kontaktskjema som brukeren kan fylle ut og sende inn. Dette bidrar til at kafeen kan få tilbakemeldinger
-            og se hva de selv kan endre på for å bedre kundefornøydheten, og få flere kunder til Webtek Cafe. 
+            inneholder et kontaktskjema som brukeren kan fylle ut og sende inn. Skjemaet inneholder navn, e-post og kommentar. 
+            Dette bidrar til at kafeen kan få tilbakemeldinger og kan forbedre kundeservicen til neste besøkende, i tillegg til at
+            flere kunder ønsker å besøke Webtek Cafe. Skjemaet er stylet i samhold med de andre sidene. 
         </p>
         <p><b>kontaktskjemareturn.html: </b>
             Brukeren blir sendt til denne siden når tilbakemeldingsskjemaet er fylt ut og sendt inn. Siden viser en
@@ -87,8 +90,8 @@
         <h3>JavaScript</h3>
         <p><b>slideshow.js: </b>
             I tillegg til å vise slideshowet på forsiden, gir funksjonen nå mulighet til å bla gjennom bildene.
-            Brukeren kan nå ved hjelp av "dottene" som er i midten nede på bildene, bla gjennom bildene. Det er
-            også mulig å se hvor i slideshowet bildet som vises er, ved å se på fargene på dottene.
+            Brukeren kan nå ved hjelp av "dottene" som er i midten nede på bildene, selv velge hvilket bilde han/hun vil se.
+            Det er også mulig å se hvor i slideshowet bildet som vises er, ved å se på fargene på dottene. 
         </p>
         <p><b>meny.js: </b>
             Funksjonen er i stor grad som planlagt. Det er lagt inn funksjonalitet for å unngå at kundene bestiller
@@ -97,10 +100,8 @@
         <p>
         <p><b>bestilling.js: </b>
             Funksjonen fungerer akkurat som planlagt. For å gjøre det mere lettvint, ligger all koden i meny.js. Dette
-            er fordi
-            funksjonen bygger på de samme variablene som meny-funksjonen. Likevel er begge funksjonene såpass
-            omfattende, at selv om
-            begge ligger i samme fil, regner vi de som 2 forskjellige funksjoner. <!-- kanskje ikke skrive det?-->
+            er fordi funksjonen bygger på de samme variablene som meny-funksjonen. Man kan si at en hypotetisk "bestilling.js"
+            ville inkludert funkjsonene som regner ut hvor mange produkter gjesten kjøper, samt hvor mye de koster.  
         </p>
         <h4 style="color: red">Fjernet</h4>
         <p><b>navbar.js: </b>
